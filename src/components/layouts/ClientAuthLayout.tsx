@@ -1,6 +1,5 @@
 import { JSX, useEffect } from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
-import rage from "@/assets/rage.png";
 import { useTranslation } from "react-i18next";
 import PageTransitionAnimation from "../transitions/PageTransitionAnimation";
 import { PageTransitionProvider } from "@/Provider.tsx/PageTransitionProvider";
@@ -12,6 +11,16 @@ const ClientAuthLayout = (): JSX.Element => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [location]);
+
+    const backgroundMap: { [key: string]: string } = {
+        "/login": "/login.png",
+        "/signup": "/signup.png",
+        "/forgot-password": "/forgot.png",
+    };
+
+    const defaultBg = "/login.png";
+    const currentPath = location.pathname;
+    const backgroundImage = backgroundMap[currentPath] || defaultBg;
 
     return (
         <PageTransitionProvider>
@@ -43,21 +52,10 @@ const ClientAuthLayout = (): JSX.Element => {
                 </div>
 
                 <div className="client-auth__side relative hidden h-full min-h-screen items-center justify-center p-4 text-center md:flex">
-                    <div className="side__background h-full w-full rounded-lg bg-primary">
-                        <div className="side__content flex h-full w-full flex-col items-center justify-center">
-                            <h1 className="side__title text-4xl font-bold text-white">
-                                {t("welcomeTitle")}
-                            </h1>
-                            <p className="side__description mt-4 text-lg text-white">
-                                {t("welcomeDescription")}
-                            </p>
-                            <img
-                                src={rage}
-                                alt="Rage"
-                                className="side_image h-[50%] w-[50%] object-cover"
-                            />
-                        </div>
-                    </div>
+                    <div
+                        className="side__background h-full w-full rounded-lg bg-cover bg-center"
+                        style={{ backgroundImage: `url(${backgroundImage})` }}
+                    ></div>
                 </div>
             </div>
             <PageTransitionAnimation />

@@ -6,9 +6,9 @@
         "welcomeDescription": "Toerana tsara indrindra hahitana ny fialam-boly manaraka"
     },
     "signUp": {
-        "title": "Mamoròna kaonty",
-        "subtitle": "Ampidiro ny mombamomba anao hamoronana kaonty vaovao.",
-        "name": "Anarana",
+        "title": "Mamorona Kaonty",
+        "subtitle": "Ampidiro ny antsipirihanao mba hisoratra anarana amin'ny kaonty vaovao.",
+        "username": "Anarana mpampiasa",
         "email": "Mailaka",
         "password": "Teny miafina",
         "confirmPassword": "Hamarino ny teny miafina",
@@ -18,9 +18,13 @@
         "hideConfirmPassword": "Afeno ny fanamafisana",
         "remember": "Tsarovy aho",
         "register": "Hisoratra anarana",
-        "orRegister": "na misoratra amin'ny",
+        "orRegister": "na hisoratra anarana amin'i",
         "already": "Efa manana kaonty ve ianao ?",
-        "login": "Hiditra"
+        "login": "Hiditra",
+        "passwordMismatch": "Tsy mitovy ny teny miafina.",
+        "emailVerificationSent": "Nalefa ny mailaka fanamafisana. Jereo ny inbox-nao.",
+        "unexpectedError": "Nisy hadisoana tsy nampoizina. Andramo indray azafady.",
+        "loading": "Fisoratana anarana..."
     },
     "Login": {
         "title": "Tongasoa indray",

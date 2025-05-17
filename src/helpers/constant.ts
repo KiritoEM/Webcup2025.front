@@ -1,8 +1,8 @@
 import { Moon, Sun } from "lucide-react";
 import { ILanguageOption, INavItem, IThemeOption } from "./types";
 
-export const BACKEND_URL = "http://localhost:8080/";
-export const API_URL = `${BACKEND_URL}api/`;
+export const BACKEND_URL =
+    "https://trim0be.madagascar.webcup.hodi.host/theendpage/api/";
 export const LANG_KEY = "i18nextLng";
 export const THEME_KEY = "theme";
 

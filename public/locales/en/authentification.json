@@ -8,7 +8,7 @@
     "signUp": {
         "title": "Create an Account",
         "subtitle": "Enter your details to register a new account.",
-        "name": "Name",
+        "username": "Username",
         "email": "Email",
         "password": "Password",
         "confirmPassword": "Confirm Password",
@@ -20,7 +20,11 @@
         "register": "Register",
         "orRegister": "or Register with",
         "already": "Already have an account?",
-        "login": "Log In"
+        "login": "Log In",
+        "passwordMismatch": "Passwords do not match.",
+        "emailVerificationSent": "Verification email sent. Please check your inbox.",
+        "unexpectedError": "An unexpected error occurred. Please try again.",
+        "loading": "Registering..."
     },
     "Login": {
         "title": "Welcome Back",
