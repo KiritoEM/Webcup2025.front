@@ -65,6 +65,7 @@
     );
     --font-display: "Inter", "sans-serif";
     --font-dm: "DmSans", "sans-serif";
+    --breakpoint-sm2: 400px;
 }
 
 :root {

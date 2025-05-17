@@ -38,8 +38,8 @@ const Hero = (): JSX.Element => {
 
     return (
         <div className="hero bg-custom-gradient flex min-h-screen items-center overflow-hidden">
-            <div className="hero__content relative mx-auto mb-[150px] flex flex-col items-center justify-center space-y-5 pt-[30vh] text-center">
-                <div className="tag inline-flex items-center gap-6 rounded-lg border px-5 py-2 text-sm text-[#ffffff80]">
+            <div className="hero__content relative px-4 md:px-0 mx-auto mb-[150px] flex flex-col items-center justify-center space-y-5 pt-[27vh] md:pt-[14vh]  lg:pt-[30vh] 2xl:pt-[26.5vh] text-center">
+                <div className="tag inline-flex items-center gap-4 md:gap-6 rounded-lg border px-3 md:px-5 py-2 text-sm text-[#ffffff80]">
                     <span>{tHome("tagLabel")}</span>
                     <span className="inline-flex h-0 items-center gap-2 text-primary">
                         {tHome("tagBtn")} <ArrowRight className="size-4" />
@@ -47,7 +47,7 @@ const Hero = (): JSX.Element => {
                 </div>
 
                 <SparklesText>
-                    <div className="hero-content__title font-dm text-[6.6vw] leading-none text-primary xl:text-[7.2vw] 2xl:text-7xl 2xl:text-[7.6vw]">
+                    <div className="hero-content__title font-dm mt-5 md:mt-2 text-[13vw] md:text-[9.5vw] lg:text-[6.6vw] 2xl:text-[5.6vw] leading-none text-primary xl:text-[7.2vw]">
                         <h1>{tHome("title")}</h1>
                         <TextMiddleOut
                             useScrollTrigger={false}
@@ -63,7 +63,7 @@ const Hero = (): JSX.Element => {
                     duration={1.4}
                     stagger={0.02}
                     delay={0.32}
-                    className="hero-content__text mb-8 max-w-[670px] text-lg"
+                    className="hero-content__text mb-8 max-w-[670px] text-base lg:text-lg"
                     text={tHome("description")}
                 />
 

@@ -8,12 +8,12 @@ const Cursor = (): JSX.Element => {
             <span
                 id="custom-cursor"
                 ref={cursorRef}
-                className="pointer-events-none fixed top-0 left-0 z-50 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-secondary mix-blend-difference"
+                className="pointer-events-none fixed top-0 left-0 z-50 hidden h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-secondary mix-blend-difference lg:block"
             ></span>
 
             <span
                 ref={followerRef}
-                className="pointer-events-none fixed top-0 left-0 z-40 h-12 w-12 -translate-x-1/2 -translate-y-1/2 rounded-full border border-secondary"
+                className="pointer-events-none fixed top-0 left-0 z-40 hidden h-12 w-12 -translate-x-1/2 -translate-y-1/2 rounded-full border border-secondary lg:block"
             ></span>
         </Fragment>
     );
