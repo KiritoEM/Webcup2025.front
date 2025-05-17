@@ -21,5 +21,24 @@
             "description": "Publish anonymously or share your page directly with whomever you choose, then close this door gracefully."
         }
     },
-    "partnersTitle": "Supported by our kind partners"
+    "partnersTitle": "Supported by our kind partners",
+    "faq": {
+        "title": "FAQ — Frequent Ends <br/> (and questions too)",
+        "accordion1": {
+            "question": "What is TheEnd.page?",
+            "response": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vero voluptatum quod architecto dolorem perferendis"
+        },
+        "accordion2": {
+            "question": "Can I really customize my page?",
+            "response": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vero voluptatum quod architecto dolorem perferendis"
+        },
+        "accordion3": {
+            "question": "Can I publish anonymously?",
+            "response": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vero voluptatum quod architecto dolorem perferendis"
+        },
+        "accordion4": {
+            "question": "Can I send my page to a specific person?",
+            "response": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vero voluptatum quod architecto dolorem perferendis"
+        }
+    }
 }

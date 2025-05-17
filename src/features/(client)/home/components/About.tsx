@@ -22,7 +22,7 @@ const AboutCard: FC<AboutCardProps> = ({
 
             <div className="about-card__texts mt-8 flex flex-col items-center space-y-3">
                 <h5 className="text-xl font-semibold">{t(title)}</h5>
-                <p className="text-center text-secondary">{t(description)}</p>
+                <p className="text-center text-primary">{t(description)}</p>
             </div>
         </article>
     );
@@ -35,7 +35,7 @@ const About = (): JSX.Element => {
         <section className="about container w-full overflow-hidden px-5 py-24">
             <div className="header mx-auto w-fit space-y-5 text-center">
                 <h2 className="header__title font-dm text-5xl">{t("title")}</h2>
-                <p className="header__description max-w-[600px] text-secondary">
+                <p className="header__description max-w-[600px] text-primary">
                     {t("description")}
                 </p>
             </div>
