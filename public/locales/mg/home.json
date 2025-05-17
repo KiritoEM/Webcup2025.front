@@ -2,7 +2,8 @@
     "hero": {
         "tagLabel": "Eto izahay ho anao",
         "tagBtn": "Hiresaka",
-        "title": "Soraty ny famaranana <br/> mahafaka anao.",
+        "title": "Soraty ny famaranana",
+        "titlePart2": "mahafaka anao.",
         "description": "Lazao ny fisarànao, ny famotsiam-piainanao na ny fialana hafa amin'ny pejy tsara tarehy, torian'ny chatbot mavitrika. Zarao na tazonio miafina."
     },
     "about": {

@@ -2,7 +2,8 @@
     "hero": {
         "tagLabel": "On est là pour toi",
         "tagBtn": "En parler",
-        "title": "Écris la fin <br/> qui te libère. ",
+        "title": "Écris la fin ",
+        "titlePart2": "qui te libère",
         "description": " Raconte ta rupture, ta démission ou tout autre départ sur une page stylée, guidé·e par notre chatbot animé. Partage-la ou garde-la secrète."
     },
     "about": {

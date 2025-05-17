@@ -1,12 +1,40 @@
 import { Button } from "@/components/ui/button";
-import { JSX } from "react";
+import { JSX, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { SparklesText } from "@/components/animations/sparkles-text";
 import { ArrowRight } from "lucide-react";
+import TextMiddleOut from "@/components/animations/TexteMiddleOut";
+import TextFollow from "@/components/animations/TextFollow";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Hero = (): JSX.Element => {
     const { t: tHome } = useTranslation("home", { keyPrefix: "hero" });
     const { t: tCommon } = useTranslation("common");
+    const buttonRef = useRef<HTMLButtonElement | null>(null);
+
+    useGSAP(() => {
+        gsap.set(buttonRef.current, {
+            opacity: 0,
+            y: 100,
+        });
+
+        gsap.to(buttonRef.current, {
+            duration: 0.5,
+            ease: "power1.out",
+            opacity: 1,
+            y: 0,
+            scrollTrigger: {
+                trigger: buttonRef.current,
+                start: "top 86%",
+                end: "bottom 10%",
+                toggleActions: "play reverse restart reverse",
+            },
+        });
+    }, []);
 
     return (
         <div className="hero bg-custom-gradient flex min-h-screen items-center overflow-hidden">
@@ -19,17 +47,31 @@ const Hero = (): JSX.Element => {
                 </div>
 
                 <SparklesText>
-                    <h1 className="hero-content__title font-dm text-[6.6vw] leading-none text-primary xl:text-[7.2vw] 2xl:text-7xl 2xl:text-[7.6vw]">
-                        <span
-                            dangerouslySetInnerHTML={{ __html: tHome("title") }}
+                    <div className="hero-content__title font-dm text-[6.6vw] leading-none text-primary xl:text-[7.2vw] 2xl:text-7xl 2xl:text-[7.6vw]">
+                        <h1>{tHome("title")}</h1>
+                        <TextMiddleOut
+                            useScrollTrigger={false}
+                            text={tHome("titlePart2")}
                         />
-                    </h1>
+                    </div>
                 </SparklesText>
-                <p className="hero-content__text mb-8 max-w-[600px] text-lg">
-                    {tHome("description")}
-                </p>
 
-                <Button size="lg" className="hero__cta rounded-full">
+                <TextFollow
+                    as="p"
+                    useScrollTrigger={false}
+                    byLine
+                    duration={1.4}
+                    stagger={0.02}
+                    delay={0.32}
+                    className="hero-content__text mb-8 max-w-[670px] text-lg"
+                    text={tHome("description")}
+                />
+
+                <Button
+                    size="lg"
+                    className="hero__cta rounded-full"
+                    ref={buttonRef}
+                >
                     {tCommon("btn.start")}
                 </Button>
             </div>

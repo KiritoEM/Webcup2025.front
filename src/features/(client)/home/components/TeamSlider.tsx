@@ -14,7 +14,7 @@ const TeamSlider = (): JSX.Element => {
         >
             <h1
                 ref={titleRef}
-                className="team-slider__main-title clip-path ml-8 h-fit font-dm text-5xl text-primary will-change-transform md:text-6xl lg:text-7xl"
+                className="team-slider__main-title clip-path ml-8 h-fit font-dm text-5xl font-semibold text-primary will-change-transform md:text-6xl lg:text-7xl"
             >
                 {t("title")}
             </h1>

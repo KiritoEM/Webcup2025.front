@@ -2,7 +2,8 @@
     "hero": {
         "tagLabel": "We're here for you",
         "tagBtn": "Talk about it",
-        "title": "Write the ending <br/> that sets you free",
+        "title": "Write the ending",
+        "titlePart2": "that sets you free",
         "description": "Tell your breakup, resignation or any departure on a styled page, guided by our animated chatbot. Share it or keep it secret."
     },
     "about": {

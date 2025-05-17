@@ -1,4 +1,5 @@
 import { Moon, Sun } from "lucide-react";
+import { useMediaQuery } from "react-responsive";
 import { ILanguageOption, INavItem, IThemeOption } from "./types";
 
 export const BACKEND_URL = "http://localhost:8080/";
@@ -61,3 +62,16 @@ export const TEXT_ELEMENTS =
 
 export const INTERACTIVE_ELEMENTS =
     "a, button, input, textarea, select, label, [role='button'], [role='link'], .interactive-list";
+
+export const useScrollDefaultOptions = () => {
+    const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
+    const isTablet = useMediaQuery({ query: "(max-width: 1023px)" });
+
+    const start = isMobile ? "+=25 88%" : isTablet ? "+=50 74%" : "+=50 81%";
+
+    return {
+        start,
+        end: "bottom 30%",
+        toggleActions: "play reverse play reverse",
+    };
+};

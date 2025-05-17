@@ -5,6 +5,7 @@ import FooterBottom from "./components/FooterBottom";
 
 const Footer = (): JSX.Element => {
     const { t } = useTranslation("home", { keyPrefix: "footer" });
+
     return (
         <footer className="footer relative mt-12 w-full font-medium">
             <div className="relative w-full">

@@ -101,6 +101,7 @@
     --sidebar-border: oklch(0.922 0 0);
     --sidebar-ring: oklch(0.708 0 0);
     --text-hover: var(--color-secondary);
+    --text-gray: #b8b2b2;
 }
 
 .dark {
@@ -136,6 +137,7 @@
     --sidebar-border: oklch(1 0 0 / 10%);
     --sidebar-ring: oklch(0.556 0 0);
     --text-hover: var(--color-secondary);
+    --text-gray: #262626;
 }
 
 @layer base {
@@ -161,6 +163,23 @@
             #217da1 68.68%,
             #6ebcdb 86.54%
         );
+    }
+
+    .text-middleout {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .text-follow div {
+        background-image: linear-gradient(
+            to right,
+            var(--color-secondary) 50%,
+            var(--text-gray) 50%
+        );
+        background-size: 200% 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-position: 100% 0%;
     }
 }
 

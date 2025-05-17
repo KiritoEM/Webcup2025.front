@@ -1,14 +1,45 @@
 import { Button } from "@/components/ui/button";
 import { TEAM_MEMBER, THANKS_TO } from "@/helpers/data/home-data";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowRight } from "lucide-react";
-import { JSX } from "react";
+import { JSX, useRef } from "react";
 import { useTranslation } from "react-i18next";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const FooterTop = (): JSX.Element => {
     const { t } = useTranslation("home", { keyPrefix: "footer" });
     const { t: tCommon } = useTranslation("common", { keyPrefix: "mainNav" });
+
+    const sectionRef = useRef<HTMLDivElement | null>(null);
+
+    useGSAP(() => {
+        gsap.set(sectionRef.current, {
+            opacity: 0,
+            y: 100,
+        });
+
+        gsap.to(sectionRef.current, {
+            duration: 0.5,
+            delay: 0.2,
+            ease: "power1.out",
+            opacity: 1,
+            y: 0,
+            scrollTrigger: {
+                trigger: sectionRef.current,
+                start: "top 86%",
+                end: "bottom 10%",
+                toggleActions: "play reverse restart reverse",
+            },
+        });
+    }, []);
     return (
-        <section className="footer-top footer-top relative z-20 container flex items-start gap-30 px-5 pb-20">
+        <section
+            className="footer-top footer-top relative z-20 container flex items-start gap-30 px-5 pb-20"
+            ref={sectionRef}
+        >
             <div className="footer-top__cta w-[40%]">
                 <h1
                     className="font-dm text-6xl leading-none text-primary"
