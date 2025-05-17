@@ -1,15 +1,14 @@
+import useTheme from "@/hooks/useTheme";
 import { ArrowLeft } from "lucide-react";
 import { JSX } from "react";
 import { Link, Outlet } from "react-router-dom";
 
 const Guide = (): JSX.Element => {
+    const { theme } = useTheme();
+
     return (
         <section
-            className="Guide min-h-screen"
-            style={{
-                background:
-                    "linear-gradient(166deg, #000 15.58%, #200D42 86.18%, #217DA1 149.5%, #6EBCDB 184.33%), #000",
-            }}
+            className={`Guide min-h-screen ${theme === "dark" ? "bg-darkGradient" : "bg-lightGradient"}`}
         >
             <div className="h-[75px]"></div>
             <Link to="/" className="mx-12 mt-6 block ">
