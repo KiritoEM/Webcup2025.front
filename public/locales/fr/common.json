@@ -1,0 +1,30 @@
+{
+    "error": {
+        "notFound": "Page non trouvée",
+        "serverError": "Erreur serveur, veuillez réessayer plus tard"
+    },
+    "success": {
+        "dataSaved": "Données enregistrées avec succès"
+    },
+    "btn": {
+        "start": "Commencer maintenant",
+        "learn": "En savoir plus"
+    },
+    "mainNav": {
+        "home": "Accueil",
+        "about": "À propos",
+        "contact": "Contact",
+        "products": "Produits",
+        "lang": {
+            "label": "Choisissez la langue",
+            "fr": "Français",
+            "en": "Anglais",
+            "mg": "Malgache"
+        },
+        "theme": {
+            "label": "Choisissez un thème",
+            "dark": "Mode sombre",
+            "light": "Mode clair"
+        }
+    }
+}

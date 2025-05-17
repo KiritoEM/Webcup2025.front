@@ -1,0 +1,9 @@
+services:
+    client:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - 8081:80
+        environment:
+            - NODE_ENV=production

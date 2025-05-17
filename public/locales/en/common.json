@@ -1,0 +1,30 @@
+{
+    "error": {
+        "notFound": "Page not found",
+        "serverError": "Server error, please try again later"
+    },
+    "success": {
+        "dataSaved": "Data saved successfully"
+    },
+    "btn": {
+        "learn": "Learn more",
+        "start": "Start now"
+    },
+    "mainNav": {
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact",
+        "products": "Products",
+        "lang": {
+            "label": "Select language",
+            "fr": "French",
+            "en": "English",
+            "mg": "Malagasy"
+        },
+        "theme": {
+            "label": "Select theme",
+            "dark": "Dark mode",
+            "light": "Light mode"
+        }
+    }
+}

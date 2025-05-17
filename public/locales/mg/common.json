@@ -1,0 +1,30 @@
+{
+    "error": {
+        "notFound": "Pejy tsy hita",
+        "serverError": "Nisy hadisoana tamin’ny lohamilina, andramo indray azafady"
+    },
+    "success": {
+        "dataSaved": "Voavonjy soa aman-tsara ny angona"
+    },
+    "btn": {
+        "learn": "Hahafantatra misimisy",
+        "start": "Hanomboka"
+    },
+    "mainNav": {
+        "home": "Fandraisana",
+        "about": "Mombamomba",
+        "contact": "Fifandraisana",
+        "products": "Vokatra",
+        "lang": {
+            "label": "Misafidiana fiteny",
+            "fr": "Frantsay",
+            "en": "Anglisy",
+            "mg": "Malagasy"
+        },
+        "theme": {
+            "label": "Misafidiana lohahevitra",
+            "dark": "Fomba maizina",
+            "light": "Fomba mazava"
+        }
+    }
+}
