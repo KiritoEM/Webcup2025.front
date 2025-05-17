@@ -8,17 +8,23 @@ const StudioHeader = (): JSX.Element => {
     const { t } = useTranslation("studio");
     return (
         <header className="studio-header w-full overflow-hidden border-b-3 border-[#FFDD9B]">
-            <div className="header-container container  px-5 flex justify-between py-6">
-                <Button variant="ghost" className="studio-header__back-btn text-2xl font-dm font-">
+            <div className="header-container container  flex justify-between px-5 py-6">
+                <Button
+                    variant="ghost"
+                    className="studio-header__back-btn font- font-dm text-2xl"
+                >
                     <ArrowLeft className="size-6" /> TheStudio
                 </Button>
 
-                <div className="header-actions w-fit flex items-center gap-6">
-                    <Button variant="ghost" className="header-actions__apercu font-dm font-">
+                <div className="header-actions flex w-fit items-center gap-6">
+                    <Button
+                        variant="ghost"
+                        className="header-actions__apercu font- font-dm"
+                    >
                         {t("preview")} <EyeIc className="size-6 fill-primary" />
                     </Button>
 
-                    <Button className="header-actions__share bg-[#1F57E7] rounded-sm text-white !px-4 font-medium">
+                    <Button className="header-actions__share rounded-sm bg-[#1F57E7] !px-4 font-medium text-white">
                         {t("share")}
                     </Button>
                 </div>

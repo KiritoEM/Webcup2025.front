@@ -35,9 +35,9 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "",
-                element: <Studio />
-            }
-        ]
+                element: <Studio />,
+            },
+        ],
     },
     {
         path: "/test-page",
