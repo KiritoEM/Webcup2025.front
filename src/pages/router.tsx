@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Home from "./(client)/home/index";
 import ClientLayout from "@/components/layouts/ClientLayout";
 import Guide from "./(client)/guide";
+import Choice from "./(client)/guide/choice";
 
 const router = createBrowserRouter([
     {
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
                 children: [
                     {
                         path: "",
-                        element: <div className="text-white">Guide</div>,
+                        element: <Choice />,
                     },
                     {
                         path: "emotions",

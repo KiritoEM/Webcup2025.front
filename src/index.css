@@ -169,6 +169,28 @@
     .container {
         @apply container mx-auto 2xl:max-w-[1440px];
     }
+    .bg-lightGradient {
+        background:
+            linear-gradient(182deg, #eaeefe 48.48%, #183ec2 101.89%),
+            linear-gradient(
+                180deg,
+                #fff 0%,
+                #d9cce6 36.21%,
+                #b3e3f4 68.68%,
+                #d8f1f9 86.54%
+            );
+    }
+
+    .bg-darkGradient {
+        background: linear-gradient(
+            180deg,
+            #000 0%,
+            #200d42 48.17%,
+            #217da1 94.25%,
+            #6ebcdb 124.91%,
+            #d7f1eb 140.33%
+        );
+    }
 }
 
 /* Toggle theme mode transition */
