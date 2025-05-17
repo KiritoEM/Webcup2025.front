@@ -3,40 +3,16 @@
 @import "tw-animate-css";
 
 @font-face {
-    font-family: "Zektonbo";
-    src: url("./assets/fonts/zektonbo.ttf") format("truetype");
-    font-weight: normal;
+    font-family: "Inter";
+    src: url("./assets/fonts/Inter.ttf") format("truetype");
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Inter Tight";
-    src: url("./assets/fonts/InterTight-Thin.ttf") format("truetype");
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Inter Tight";
-    src: url("./assets/fonts/InterTight-Medium.ttf") format("truetype");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Inter Tight";
-    src: url("./assets/fonts/InterTight-SemiBold.ttf") format("truetype");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Inter Tight";
-    src: url("./assets/fonts/InterTight-ExtraBold.ttf") format("truetype");
+    font-family: "DMSans";
+    src: url("./assets/fonts/DMSans.ttf") format("truetype");
     font-weight: 800;
     font-style: normal;
     font-display: swap;
@@ -80,8 +56,15 @@
     --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
     --color-sidebar-border: var(--sidebar-border);
     --color-sidebar-ring: var(--sidebar-ring);
-    --font-display: "Inter Tight", "sans-serif";
-    --font-zektonbo: "Zektonbo", "sans-serif";
+    --bg-home-linear-bg: linear-gradient(
+        180deg,
+        #000 0%,
+        #200d42 36.21%,
+        #217da1 68.68%,
+        #6ebcdb 86.54%
+    );
+    --font-display: "Inter", "sans-serif";
+    --font-dm: "DmSans", "sans-serif";
 }
 
 :root {
@@ -92,7 +75,7 @@
     --card-foreground: oklch(0.145 0 0);
     --popover: oklch(1 0 0);
     --popover-foreground: oklch(0.145 0 0);
-    --primary: oklch(0.6 0.1 91.87);
+    --primary: oklch(0.16 0.0571 296.35);
     --primary-foreground: oklch(0.985 0 0);
     --secondary: oklch(0.269 0 0);
     --secondary-foreground: oklch(0.205 0 0);
@@ -127,7 +110,7 @@
     --card-foreground: oklch(0.985 0 0);
     --popover: oklch(0.205 0 0);
     --popover-foreground: oklch(0.985 0 0);
-    --primary: oklch(0.9 0.1448 91.87);
+    --primary: oklch(1 0 0);
     --primary-foreground: oklch(0.205 0 0);
     --secondary: oklch(0.985 0 0);
     --secondary-foreground: oklch(0.985 0 0);
@@ -161,13 +144,23 @@
     }
 
     body {
-        @apply bg-background text-base font-normal text-foreground;
+        @apply bg-background text-base font-light text-foreground;
     }
 }
 
 @layer utilities {
     .container {
         @apply container mx-auto 2xl:max-w-[1440px];
+    }
+
+    .bg-custom-gradient {
+        background-image: linear-gradient(
+            180deg,
+            #000 0%,
+            #200d42 40.21%,
+            #217da1 68.68%,
+            #6ebcdb 86.54%
+        );
     }
 }
 

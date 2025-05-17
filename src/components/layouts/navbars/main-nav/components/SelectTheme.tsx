@@ -8,10 +8,9 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { THEME_OPTIONS } from "@/helpers/constant";
-import { Theme } from "@/helpers/icons";
 import useTheme from "@/hooks/useTheme";
-
 import { cn } from "@/lib/utils";
+import { SunDim } from "lucide-react";
 import { JSX } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -22,7 +21,7 @@ const SelectTheme = (): JSX.Element => {
     return (
         <DropdownMenu>
             <DropdownMenuTrigger className="transform cursor-pointer transition-transform duration-200 ease-in-out hover:[&>svg]:scale-110">
-                <Theme className="size-8 fill-primary" />
+                <SunDim className="size-6 fill-primary" />
             </DropdownMenuTrigger>
 
             <DropdownMenuContent

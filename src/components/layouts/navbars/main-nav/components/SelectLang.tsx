@@ -29,7 +29,7 @@ const SelectLang = (): JSX.Element => {
     return (
         <DropdownMenu>
             <DropdownMenuTrigger className="transform cursor-pointer transition-transform duration-200 ease-in-out hover:[&>svg]:scale-110">
-                <Lang className="size-8 fill-primary" />
+                <Lang className="size-6 fill-primary" />
             </DropdownMenuTrigger>
 
             <DropdownMenuContent align="end" className="w-[200px] p-3">

@@ -8,13 +8,14 @@
     },
     "btn": {
         "learn": "Learn more",
-        "start": "Start now"
+        "start": "Start my confession"
     },
     "mainNav": {
         "home": "Home",
-        "about": "About",
-        "contact": "Contact",
-        "products": "Products",
+        "example": "Examples",
+        "link": "Link",
+        "faq": "Products",
+        "help": "Help",
         "lang": {
             "label": "Select language",
             "fr": "French",

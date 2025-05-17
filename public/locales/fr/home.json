@@ -1,7 +1,24 @@
 {
     "hero": {
-        "title": "Bienvenue sur notre",
-        "titleHighlight": "Boilerplate React",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quibusdam itaque aspernatur esse deleniti laboriosam eos"
+        "tagLabel": "On est là pour toi",
+        "tagBtn": "En parler",
+        "title": "Écris la fin <br/> qui te libère. ",
+        "description": " Raconte ta rupture, ta démission ou tout autre départ sur une page stylée, guidé·e par notre chatbot animé. Partage-la ou garde-la secrète."
+    },
+    "about": {
+        "title": "Ouvre la porte à ta vérité",
+        "description": "Ici, chaque fin devient un nouveau commencement. Franchis le seuil de TheEnd.page et transforme ta rupture, ta démission ou la fin de ton projet en une page unique à ton image.",
+        "card1": {
+            "title": "Franchis le seuil",
+            "description": "Lume, notre bot empathique, t’accueille et t’aide à formuler tes émotions."
+        },
+        "card2": {
+            "title": "Déroule ton histoire",
+            "description": "Raconte tes souvenirs et tes ressentis via un éditeur simple et visuel."
+        },
+        "card3": {
+            "title": "Réfère-toi",
+            "description": "Publie anonymement ou partage directement ta page avec qui tu veux, puis referme cette porte en beauté."
+        }
     }
 }

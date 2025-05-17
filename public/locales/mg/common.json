@@ -8,13 +8,14 @@
     },
     "btn": {
         "learn": "Hahafantatra misimisy",
-        "start": "Hanomboka"
+        "start": "Hanomboka ny konfesy"
     },
     "mainNav": {
         "home": "Fandraisana",
-        "about": "Mombamomba",
-        "contact": "Fifandraisana",
-        "products": "Vokatra",
+        "example": "Ohatra",
+        "link": "Rohy",
+        "faq": "Fanontaniana Matetika",
+        "help": "Fanampiana",
         "lang": {
             "label": "Misafidiana fiteny",
             "fr": "Frantsay",

@@ -1,7 +1,24 @@
 {
     "hero": {
-        "title": "Welcome to our",
-        "titleHighlight": "React Boilerplate",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quibusdam itaque aspernatur esse deleniti laboriosam eos"
+        "tagLabel": "We're here for you",
+        "tagBtn": "Talk about it",
+        "title": "Write the ending <br/> that sets you free",
+        "description": "Tell your breakup, resignation or any departure on a styled page, guided by our animated chatbot. Share it or keep it secret."
+    },
+    "about": {
+        "title": "Open the door to your truth",
+        "description": "Ici, chaque fin devient un nouveau commencement. Franchis le seuil de TheEnd.page et transforme ta rupture, ta démission ou la fin de ton projet en une page unique à ton image.",
+        "card1": {
+            "title": "Cross the threshold",
+            "description": "Lume, our empathetic bot, welcomes you and helps you express your emotions."
+        },
+        "card2": {
+            "title": "Unfold your story",
+            "description": "Share your memories and feelings through a simple and visual editor."
+        },
+        "card3": {
+            "title": "Reflect",
+            "description": "Publish anonymously or share your page directly with whomever you choose, then close this door gracefully."
+        }
     }
 }

@@ -3,15 +3,17 @@ import { JSX } from "react";
 import SelectLang from "./components/SelectLang";
 import SelectTheme from "./components/SelectTheme";
 import { useTranslation } from "react-i18next";
+import { Logo } from "@/helpers/icons";
+import { Button } from "@/components/ui/button";
 
 const MainNav = (): JSX.Element => {
     const { t } = useTranslation("common");
 
     return (
         <nav className="main-nav absolute top-0 left-0 z-40 w-full overflow-hidden">
-            <div className="main-nav__container container flex items-center justify-between px-12 py-8">
+            <div className="main-nav__container container flex items-center justify-between px-5 py-8">
                 <div className="logo">
-                    <h1 className="font-zektonbo text-2xl">Logo.</h1>
+                    <Logo />
                 </div>
 
                 <ul className="menu-items flex space-x-8">
@@ -26,8 +28,10 @@ const MainNav = (): JSX.Element => {
                 </ul>
 
                 <div className="actions flex items-center space-x-5">
-                    <SelectLang />
                     <SelectTheme />
+                    <SelectLang />
+
+                    <Button className="ml-6 rounded-full">Commencer</Button>
                 </div>
             </div>
         </nav>

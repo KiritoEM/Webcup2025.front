@@ -7,14 +7,15 @@
         "dataSaved": "Données enregistrées avec succès"
     },
     "btn": {
-        "start": "Commencer maintenant",
+        "start": "Commencer ma confession",
         "learn": "En savoir plus"
     },
     "mainNav": {
         "home": "Accueil",
-        "about": "À propos",
-        "contact": "Contact",
-        "products": "Produits",
+        "example": "Exemples",
+        "link": "Lien",
+        "faq": "FAQ",
+        "help": "Aide",
         "lang": {
             "label": "Choisissez la langue",
             "fr": "Français",
