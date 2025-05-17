@@ -4,19 +4,16 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
 import { JSX } from "react";
-import { Link } from "react-router-dom";
 import { Eye, EyeOff } from "lucide-react";
 import { Google } from "@/helpers/icons";
 import { useTranslation } from "react-i18next";
+import { usePageTransition } from "@/Provider.tsx/PageTransitionProvider";
 
-const SignUp = ({
-    className,
-    ...props
-}: React.ComponentPropsWithoutRef<"form">): JSX.Element => {
+const SignUp = (): JSX.Element => {
     const { t } = useTranslation("authentification", { keyPrefix: "signUp" });
     const [showPassword, setShowPassword] = useState(false);
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
-
+    const { navigateWithTransition } = usePageTransition();
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
     };
@@ -26,7 +23,7 @@ const SignUp = ({
     };
 
     return (
-        <form className={cn("flex flex-col gap-6", className)} {...props}>
+        <div className={cn("flex flex-col gap-6")}>
             <div className="flex flex-col items-center gap-2 text-center">
                 <h1 className="text-4xl font-bold">{t("title")}</h1>
                 <p className="text-sm text-balance text-muted-foreground">
@@ -132,14 +129,14 @@ const SignUp = ({
             </div>
             <div className="text-center text-sm">
                 {t("already")}{" "}
-                <Link
-                    to={"/login"}
-                    className="text-primary underline underline-offset-4"
+                <span
+                    onClick={() => navigateWithTransition("/login")}
+                    className="cursor-pointer text-primary underline underline-offset-4 "
                 >
                     {t("login")}
-                </Link>
+                </span>
             </div>
-        </form>
+        </div>
     );
 };
 
