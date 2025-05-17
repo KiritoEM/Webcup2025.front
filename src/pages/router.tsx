@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Home from "./(client)/home/index";
 import ClientLayout from "@/components/layouts/ClientLayout";
 import Guide from "./(client)/guide";
+import Chat from "./(client)/guide/chat";
 
 const router = createBrowserRouter([
     {
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
                     },
                     {
                         path: "chat",
-                        element: <div>chat</div>,
+                        element: <Chat />,
                     },
                 ],
             },
