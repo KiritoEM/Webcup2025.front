@@ -40,5 +40,14 @@
             "question": "Can I send my page to a specific person?",
             "response": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vero voluptatum quod architecto dolorem perferendis"
         }
+    },
+    "footer": {
+        "cta": {
+            "text": "Because every <br/> chaque ending deserves <br/> to be heard.",
+            "btnLabel": "Get in Touch"
+        },
+        "navigation": "navigation",
+        "thanks": "Remerciements à",
+        "team": "L’équipe Trimobe"
     }
 }

@@ -20,6 +20,29 @@ export const ABOUT_DATA: AboutCardProps[] = [
     },
 ];
 
+export const TEAM_INFO = [
+    {
+        name: "Loick",
+        role: "Frontend",
+        profile_img: "/home/teams/Loick.png",
+    },
+    {
+        name: "Luca",
+        role: "Backend",
+        profile_img: "/home/teams/Luca.png",
+    },
+    {
+        name: "Nameno",
+        role: "Frontend",
+        profile_img: "/home/teams/Nameno.png",
+    },
+    {
+        name: "Sedra",
+        role: "Designer",
+        profile_img: "/home/teams/Sedra.png",
+    },
+];
+
 export const FAQ_DATA: FAQAccordionProps[] = [
     {
         response: "accordion1.response",
@@ -38,3 +61,11 @@ export const FAQ_DATA: FAQAccordionProps[] = [
         question: "accordion4.question",
     },
 ];
+
+export const THANKS_TO = [
+    "Association Webcup",
+    "Les partenaires",
+    "L’équipe Trimobe",
+];
+
+export const TEAM_MEMBER = ["Nameno", "Luca", "Loick", "Sedra"];

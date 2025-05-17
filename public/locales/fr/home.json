@@ -22,6 +22,9 @@
         }
     },
     "partnersTitle": "Appuyé par nos aimables partenaires",
+    "team": {
+        "title": "Notre team TRIMOBE"
+    },
     "faq": {
         "title": "FAQ — Fins fréquentes <br/> (et questions aussi)",
         "accordion1": {
@@ -40,5 +43,15 @@
             "question": "Est-ce que je peux envoyer ma page à une personne précise ?",
             "response": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vero voluptatum quod architecto dolorem perferendis"
         }
+    },
+    "footer": {
+        "cta": {
+            "text": "Parce que <br/> chaque fin mérite <br/>d’être entendue.",
+            "btnLabel": "Get in Touch"
+        },
+        "navigation": "Navigation",
+        "thanks": "Remerciements à",
+        "team": "L’équipe Trimobe",
+        "footerText": "Une confession. Une création. Un pas vers autre chose."
     }
 }

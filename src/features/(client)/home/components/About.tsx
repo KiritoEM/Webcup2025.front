@@ -34,7 +34,9 @@ const About = (): JSX.Element => {
     return (
         <section className="about container w-full overflow-hidden px-5 py-24">
             <div className="header mx-auto w-fit space-y-5 text-center">
-                <h2 className="header__title font-dm text-5xl">{t("title")}</h2>
+                <h2 className="header__title font-dm text-5xl font-semibold">
+                    {t("title")}
+                </h2>
                 <p className="header__description max-w-[600px] text-primary">
                     {t("description")}
                 </p>

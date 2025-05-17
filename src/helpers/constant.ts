@@ -12,20 +12,16 @@ export const MAIN_NAV_DATA: INavItem[] = [
         href: "/",
     },
     {
+        title: "mainNav.about",
+        href: "/products",
+    },
+    {
         title: "mainNav.example",
         href: "/about",
     },
     {
-        title: "mainNav.link",
-        href: "/blog",
-    },
-    {
         title: "mainNav.faq",
-        href: "/products",
-    },
-    {
-        title: "mainNav.help",
-        href: "/products",
+        href: "/faq",
     },
 ];
 

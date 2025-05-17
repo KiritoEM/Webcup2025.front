@@ -5,7 +5,7 @@
 @font-face {
     font-family: "Inter";
     src: url("./assets/fonts/Inter.ttf") format("truetype");
-    font-weight: 300;
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
@@ -13,7 +13,7 @@
 @font-face {
     font-family: "DMSans";
     src: url("./assets/fonts/DMSans.ttf") format("truetype");
-    font-weight: 800;
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
@@ -144,7 +144,7 @@
     }
 
     body {
-        @apply bg-background text-base font-light text-foreground;
+        @apply bg-background text-base font-normal text-foreground;
     }
 }
 

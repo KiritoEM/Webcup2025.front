@@ -1,45 +1,40 @@
-import { JSX, useLayoutEffect, useRef } from "react";
+import { JSX, useEffect, useRef } from "react";
 import { Outlet } from "react-router-dom";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
-import { ScrollSmoother } from "gsap/ScrollSmoother";
 import MainNav from "./navbars/main-nav";
-
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+import { ReactLenis, LenisRef } from "lenis/react";
 
 const ClientLayout = (): JSX.Element => {
-    const wrapperRef = useRef<HTMLDivElement | null>(null);
-    const contentRef = useRef<HTMLDivElement | null>(null);
+    const lenisRef = useRef<LenisRef | null>(null);
 
-    useLayoutEffect(() => {
-        const isMobile = window.matchMedia("(max-width: 1023px)").matches;
+    useEffect(() => {
+        function update(time: number) {
+            lenisRef.current?.lenis?.raf(time * 1000);
+        }
 
-        const smoother = ScrollSmoother.create({
-            wrapper: wrapperRef.current,
-            content: contentRef.current,
-            smooth: isMobile ? 1.6 : 2,
-            effects: true,
-            normalizeScroll: isMobile,
-        });
-
-        ScrollTrigger.defaults({
-            scroller: wrapperRef.current,
-        });
-
-        ScrollTrigger.refresh();
+        gsap.ticker.add(update);
 
         return () => {
-            smoother.kill();
+            gsap.ticker.remove(update);
         };
     }, []);
 
     return (
-        <main ref={wrapperRef} className="w-full dark:bg-stone-950">
-            <div ref={contentRef}>
+        <ReactLenis
+            root
+            options={{
+                duration: 1.5,
+                smoothWheel: true,
+                wheelMultiplier: 0.75,
+                easing: (t: number) => 1 - Math.pow(3, -10 * t),
+            }}
+            ref={lenisRef}
+        >
+            <main className="w-full dark:bg-stone-950">
                 <MainNav />
                 <Outlet />
-            </div>
-        </main>
+            </main>
+        </ReactLenis>
     );
 };
 

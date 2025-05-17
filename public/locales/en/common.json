@@ -13,8 +13,8 @@
     "mainNav": {
         "home": "Home",
         "example": "Examples",
-        "link": "Link",
-        "faq": "Products",
+        "about": "About",
+        "faq": "FAQ",
         "help": "Help",
         "lang": {
             "label": "Select language",

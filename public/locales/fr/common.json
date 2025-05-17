@@ -13,9 +13,8 @@
     "mainNav": {
         "home": "Accueil",
         "example": "Exemples",
-        "link": "Lien",
+        "about": "A propos",
         "faq": "FAQ",
-        "help": "Aide",
         "lang": {
             "label": "Choisissez la langue",
             "fr": "Français",
