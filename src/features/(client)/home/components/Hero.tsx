@@ -8,6 +8,7 @@ import TextFollow from "@/components/animations/TextFollow";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -38,8 +39,8 @@ const Hero = (): JSX.Element => {
 
     return (
         <div className="hero bg-custom-gradient flex min-h-screen items-center overflow-hidden">
-            <div className="hero__content relative px-4 md:px-0 mx-auto mb-[150px] flex flex-col items-center justify-center space-y-5 pt-[27vh] md:pt-[14vh]  lg:pt-[30vh] 2xl:pt-[26.5vh] text-center">
-                <div className="tag inline-flex items-center gap-4 md:gap-6 rounded-lg border px-3 md:px-5 py-2 text-sm text-[#ffffff80]">
+            <div className="hero__content relative mx-auto mb-[150px] flex flex-col items-center justify-center space-y-5 px-4 pt-[27vh] text-center md:px-0  md:pt-[14vh] lg:pt-[30vh] 2xl:pt-[26.5vh]">
+                <div className="tag inline-flex items-center gap-4 rounded-lg border px-3 py-2 text-sm text-[#ffffff80] md:gap-6 md:px-5">
                     <span>{tHome("tagLabel")}</span>
                     <span className="inline-flex h-0 items-center gap-2 text-primary">
                         {tHome("tagBtn")} <ArrowRight className="size-4" />
@@ -47,7 +48,7 @@ const Hero = (): JSX.Element => {
                 </div>
 
                 <SparklesText>
-                    <div className="hero-content__title font-dm mt-5 md:mt-2 text-[13vw] md:text-[9.5vw] lg:text-[6.6vw] 2xl:text-[5.6vw] leading-none text-primary xl:text-[7.2vw]">
+                    <div className="hero-content__title mt-5 font-dm text-[13vw] leading-none text-primary md:mt-2 md:text-[9.5vw] lg:text-[6.6vw] xl:text-[7.2vw] 2xl:text-[5.6vw]">
                         <h1>{tHome("title")}</h1>
                         <TextMiddleOut
                             useScrollTrigger={false}
@@ -67,13 +68,15 @@ const Hero = (): JSX.Element => {
                     text={tHome("description")}
                 />
 
-                <Button
-                    size="lg"
-                    className="hero__cta rounded-full"
-                    ref={buttonRef}
-                >
-                    {tCommon("btn.start")}
-                </Button>
+                <Link to={"/test-page"}>
+                    <Button
+                        size="lg"
+                        className="hero__cta rounded-full"
+                        ref={buttonRef}
+                    >
+                        {tCommon("btn.start")}
+                    </Button>
+                </Link>
             </div>
         </div>
     );

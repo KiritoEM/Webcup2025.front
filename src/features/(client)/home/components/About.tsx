@@ -28,8 +28,10 @@ const AboutCard: FC<AboutCardProps> = ({
             </div>
 
             <div className="about-card__texts mt-8 flex flex-col items-center space-y-3">
-                <h5 className="text-lg lg:text-xl font-semibold">{t(title)}</h5>
-                <p className="text-sm lg:text-base text-center text-primary">{t(description)}</p>
+                <h5 className="text-lg font-semibold lg:text-xl">{t(title)}</h5>
+                <p className="text-center text-sm text-primary lg:text-base">
+                    {t(description)}
+                </p>
             </div>
         </article>
     );
@@ -67,7 +69,7 @@ const About = (): JSX.Element => {
                     byLine
                     duration={1.4}
                     stagger={0.02}
-                    className="header__title font-dm text-4xl md:text-5xl 2xl:text-6xl font-semibold"
+                    className="header__title font-dm text-4xl font-semibold md:text-5xl 2xl:text-6xl"
                     text={t("title")}
                 />
 
@@ -82,7 +84,7 @@ const About = (): JSX.Element => {
                 />
             </div>
 
-            <div className="about__cards mt-18 grid md:grid-cols-3 gap-8 md:gap-5">
+            <div className="about__cards mt-18 grid gap-8 md:grid-cols-3 md:gap-5">
                 {ABOUT_DATA.map((about, index) => (
                     <AboutCard key={index} {...about} />
                 ))}

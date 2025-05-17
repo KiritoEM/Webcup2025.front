@@ -1,0 +1,11 @@
+{
+    "header": {
+        "preview": "preview",
+        "share": "Share"
+    },
+    "toolbar": {
+        "text": "Text",
+        "color": "Color",
+        "elements": "Elements"
+    }
+}

@@ -3,6 +3,9 @@ import Home from "./(client)/home/index";
 import ClientLayout from "@/components/layouts/ClientLayout";
 import Login from "./(client)/login";
 import Signup from "./(client)/signup";
+import Test from "./test";
+import Studio from "./(client)/studio";
+import StudioLayout from "@/components/layouts/StudioLayout";
 
 const router = createBrowserRouter([
     {
@@ -25,6 +28,20 @@ const router = createBrowserRouter([
                 element: <Signup />,
             },
         ],
+    },
+    {
+        path: "studio",
+        element: <StudioLayout />,
+        children: [
+            {
+                path: "",
+                element: <Studio />
+            }
+        ]
+    },
+    {
+        path: "/test-page",
+        element: <Test />,
     },
 ]);
 
