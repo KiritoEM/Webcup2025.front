@@ -1,0 +1,39 @@
+{
+    "layout": {
+        "rightsReserved": "Zon'ny rehetra voatokana.",
+        "privacyPolicy": "Politika fiarovana tsiambaratelo",
+        "welcomeTitle": "Tongasoa eto amin'i Rage",
+        "welcomeDescription": "Toerana tsara indrindra hahitana ny fialam-boly manaraka"
+    },
+    "signUp": {
+        "title": "Mamoròna kaonty",
+        "subtitle": "Ampidiro ny mombamomba anao hamoronana kaonty vaovao.",
+        "name": "Anarana",
+        "email": "Mailaka",
+        "password": "Teny miafina",
+        "confirmPassword": "Hamarino ny teny miafina",
+        "showPassword": "Asehoy ny teny miafina",
+        "hidePassword": "Afeno ny teny miafina",
+        "showConfirmPassword": "Asehoy ny fanamafisana",
+        "hideConfirmPassword": "Afeno ny fanamafisana",
+        "remember": "Tsarovy aho",
+        "register": "Hisoratra anarana",
+        "orRegister": "na misoratra amin'ny",
+        "already": "Efa manana kaonty ve ianao ?",
+        "login": "Hiditra"
+    },
+    "Login": {
+        "title": "Tongasoa indray",
+        "subtitle": "Ampidiro ny mailakao sy tenimiafinao mba hiditra amin'ny kaontinao.",
+        "email": "Mailaka",
+        "password": "Tenimiafina",
+        "hidePassword": "Afeno ny tenimiafina",
+        "showPassword": "Asehoy ny tenimiafina",
+        "remember": "Tsarovy aho",
+        "forgotPassword": "Adinonao ve ny tenimiafina?",
+        "loginButton": "Hiditra",
+        "orLoginWith": "Na Midira Amin'ny",
+        "noAccount": "Tsy manana kaonty ve ianao?",
+        "signupLink": "Misoratra anarana"
+    }
+}
