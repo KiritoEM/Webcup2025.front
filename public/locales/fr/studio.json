@@ -2,5 +2,12 @@
     "header": {
         "preview": "Aperçu",
         "share": "Partager"
+    },
+    "toolbar": {
+        "text": "Texte",
+        "color": "Couleur",
+        "elements": "Éléments",
+        "music": "Musique",
+        "image": "Image"
     }
 }

@@ -1,22 +1,24 @@
+import { Text } from "../icons";
+
 export const STUDIO_TOOLBAR_LIST = [
     {
-        label: "Texte",
-        icon: ""
+        label: "text",
+        icon: <Text className="size-6 fill-primary" />,
     },
     {
-        label: "Couleur",
-        icon: ""
+        label: "color",
+        icon: <Text className="size-6 fill-primary" />,
     },
     {
-        label: "Texte",
-        icon: ""
+        label: "elements",
+        icon: <Text className="size-6 fill-primary" />,
     },
     {
-        label: "Texte",
-        icon: ""
+        label: "image",
+        icon: <Text className="size-6 fill-primary" />,
     },
     {
-        label: "Texte",
-        icon: ""
-    }
+        label: "music",
+        icon: <Text className="size-6 fill-primary" />,
+    },
 ];

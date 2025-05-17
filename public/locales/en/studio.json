@@ -6,6 +6,8 @@
     "toolbar": {
         "text": "Text",
         "color": "Color",
-        "elements": "Elements"
+        "elements": "Elements",
+        "music": "Music",
+        "image": "Image"
     }
 }
