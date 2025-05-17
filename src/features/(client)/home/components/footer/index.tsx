@@ -22,7 +22,7 @@ const Footer = (): JSX.Element => {
 
                 <img
                     src="/gradient.svg"
-                    className="absolute right-0 bottom-0 z-10 h-[92%] w-full"
+                    className="absolute right-0 bottom-0 z-10 h-[27%] w-full md:h-[70%] lg:h-[76%] xl:h-[85%]"
                 />
             </div>
         </footer>

@@ -2,6 +2,8 @@ import { MAIN_NAV_DATA } from "@/helpers/constant";
 import { cn } from "@/lib/utils";
 import { FC, JSX } from "react";
 import { useTranslation } from "react-i18next";
+import SelectLangResponsive from "./SelectLangResponsive";
+import SelectThemeResponsive from "./SelectThemeResponsive";
 
 type MenuProps = {
     isOpen: boolean;
@@ -12,7 +14,7 @@ const MenuResponsive: FC<MenuProps> = ({ isOpen }): JSX.Element => {
     return (
         <div
             className={cn(
-                "menu-responsive fixed z-40 mt-[110px] h-fit w-full px-6",
+                "menu-responsive fixed z-40 mt-[84px] h-fit w-full px-6",
                 isOpen ? "flex lg:hidden" : "hidden",
                 "justify-end",
             )}
@@ -28,6 +30,11 @@ const MenuResponsive: FC<MenuProps> = ({ isOpen }): JSX.Element => {
                         </li>
                     ))}
                 </ul>
+
+                <div className="actions mx-auto mt-8 flex w-fit gap-7">
+                    <SelectLangResponsive />
+                    <SelectThemeResponsive />
+                </div>
             </div>
         </div>
     );

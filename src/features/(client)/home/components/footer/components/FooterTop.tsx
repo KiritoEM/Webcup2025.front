@@ -37,22 +37,24 @@ const FooterTop = (): JSX.Element => {
     }, []);
     return (
         <section
-            className="footer-top footer-top relative z-20 container flex items-start gap-30 px-5 pb-20"
+            className="footer-top footer-top relative z-20 container flex flex-col items-center gap-30 px-5 pb-20 lg:flex-row lg:items-start"
             ref={sectionRef}
         >
-            <div className="footer-top__cta w-[40%]">
+            <div className="footer-top__cta lg:max-w-auto flex w-full max-w-[450px] flex-col items-center lg:w-[40%] lg:items-start">
                 <h1
-                    className="font-dm text-6xl leading-none text-primary"
+                    className="text-center font-dm text-4xl leading-none text-primary md:text-5xl lg:text-start xl:text-6xl"
                     dangerouslySetInnerHTML={{ __html: t("cta.text") }}
                 />
-                <Button size="lg" className="mt-8 rounded-full !px-5">
+                <Button size="lg" className="mt-8 w-fit rounded-full !px-5">
                     {t("cta.btnLabel")} <ArrowRight className="size-6" />
                 </Button>
             </div>
 
-            <div className="menu-items grid w-[60%] grid-cols-3">
+            <div className="menu-items grid w-full gap-8 sm:grid-cols-3 md:gap-6 lg:w-[60%] xl:gap-0">
                 <div className="menu-items__navigation">
-                    <h5 className="text-xl text-primary">{t("navigation")}</h5>
+                    <h5 className="text-lg text-primary xl:text-xl">
+                        {t("navigation")}
+                    </h5>
 
                     <ul className="mt-5 space-y-5 text-sm font-normal">
                         <li className="text-primary/70 hover:text-blue-500">
@@ -71,7 +73,9 @@ const FooterTop = (): JSX.Element => {
                 </div>
 
                 <div className="menu-items__navigation">
-                    <h5 className="text-xl text-primary">{t("thanks")}</h5>
+                    <h5 className="text-lg text-primary xl:text-xl">
+                        {t("thanks")}
+                    </h5>
 
                     <ul className="mt-5 space-y-5 text-sm font-normal">
                         {THANKS_TO.map((element, index) => (
@@ -86,7 +90,9 @@ const FooterTop = (): JSX.Element => {
                 </div>
 
                 <div className="menu-items__navigation">
-                    <h5 className="text-xl text-primary">{t("team")}</h5>
+                    <h5 className="text-lg text-primary xl:text-xl">
+                        {t("team")}
+                    </h5>
 
                     <ul className="mt-5 space-y-5 text-sm font-normal">
                         {TEAM_MEMBER.map((element, index) => (

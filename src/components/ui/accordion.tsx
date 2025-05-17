@@ -39,7 +39,7 @@ function AccordionTrigger({
                 {...props}
             >
                 {children}
-                <Plus className="pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200" />
+                <Plus className="pointer-events-none size-3 shrink-0 translate-y-0.5 transition-transform duration-200 md:size-4" />
             </AccordionPrimitive.Trigger>
         </AccordionPrimitive.Header>
     );

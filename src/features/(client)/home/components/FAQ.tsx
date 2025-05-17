@@ -62,7 +62,7 @@ const FAQ = (): JSX.Element => {
     return (
         <section className="FAQ mx-auto flex w-full max-w-[850px] flex-col items-center overflow-hidden px-5 py-24">
             <TextLift
-                className="text-center font-dm text-6xl font-semibold text-primary"
+                className="text-center font-dm text-5xl font-semibold text-primary lg:text-6xl"
                 text={t("title")}
             />
 

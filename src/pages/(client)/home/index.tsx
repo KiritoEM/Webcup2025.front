@@ -12,9 +12,9 @@ const Home = (): JSX.Element => {
             <Hero />
             <About />
             <Partners />
-            {/*<TeamSlider />
+            <TeamSlider />
             <FAQ />
-            <Footer /> */}
+            <Footer />
         </section>
     );
 };
