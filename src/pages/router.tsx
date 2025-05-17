@@ -1,8 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "./(client)/home/index";
 import ClientLayout from "@/components/layouts/ClientLayout";
-import Login from "./(client)/login";
-import Signup from "./(client)/signup";
+import Guide from "./(client)/guide";
 
 const router = createBrowserRouter([
     {
@@ -11,18 +10,24 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home />,
-                // loader: async () => {
-                //     // Simulate a data fetching error
-                //     throw new Error("Data fetching error");
-                // },
             },
             {
-                path: "/login",
-                element: <Login />,
-            },
-            {
-                path: "/signup",
-                element: <Signup />,
+                path: "/guide",
+                element: <Guide />,
+                children: [
+                    {
+                        path: "",
+                        element: <div className="text-white">Guide</div>,
+                    },
+                    {
+                        path: "emotions",
+                        element: <div>emotions</div>,
+                    },
+                    {
+                        path: "chat",
+                        element: <div>chat</div>,
+                    },
+                ],
             },
         ],
     },
