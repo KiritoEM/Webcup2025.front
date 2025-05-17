@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Home from "./(client)/home/index";
 import ClientLayout from "@/components/layouts/ClientLayout";
 import Guide from "./(client)/guide";
+import Emotions from "./(client)/guide/emotions";
 
 const router = createBrowserRouter([
     {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
                     },
                     {
                         path: "emotions",
-                        element: <div>emotions</div>,
+                        element: <Emotions />,
                     },
                     {
                         path: "chat",
