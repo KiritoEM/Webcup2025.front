@@ -104,3 +104,95 @@ export const Text: FC<IconProps> = ({ ...props }) => {
         </svg>
     );
 };
+
+export const Color: FC<IconProps> = ({ ...props }) => {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+            {...props}
+        >
+            <path
+                fillOpacity="0.7"
+                d="M19.5 16.5q3 3.135 3 4.687c0 1.554-1.343 2.813-3 2.813s-3-1.26-3-2.813q0-1.552 3-4.687M8.785.225l9.51 9.675.024.03.486.481a2.25 2.25 0 0 1 .165 3.01l-.154.17-6.711 6.77a2.25 2.25 0 0 1-3.185.012L2.196 13.59a2.25 2.25 0 0 1 .01-3.18l6.708-6.675c.218-.22.47-.381.738-.49l-1.936-1.97a.75.75 0 0 1 1.07-1.05m2.244 4.573a.75.75 0 0 0-1.057 0l-6.707 6.677a.75.75 0 0 0-.222.525h14.925a.75.75 0 0 0-.222-.525L11.03 4.8z"
+            ></path>
+        </svg>
+    );
+};
+
+export const Elements: FC<IconProps> = ({ ...props }) => {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="24"
+            fill="none"
+            viewBox="0 0 25 24"
+            {...props}
+        >
+            <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeOpacity="0.7"
+                strokeWidth="1.5"
+                d="M15.117 4.767c1.01-1.6 1.516-2.4 2.178-2.643a2.06 2.06 0 0 1 1.41 0c.662.242 1.168 1.042 2.178 2.643 1.137 1.801 1.706 2.702 1.606 3.445-.069.51-.326.976-.72 1.306C21.195 10 20.13 10 18 10s-3.195 0-3.77-.482a2.06 2.06 0 0 1-.719-1.306c-.1-.743.469-1.644 1.606-3.445M2.5 6c0-1.667 0-2.5.424-3.084q.207-.285.492-.492C4 2 4.833 2 6.5 2s2.5 0 3.084.424q.285.207.492.492C10.5 3.5 10.5 4.333 10.5 6s0 2.5-.424 3.084a2.2 2.2 0 0 1-.492.492C9 10 8.167 10 6.5 10S4 10 3.416 9.576a2.2 2.2 0 0 1-.492-.492C2.5 8.5 2.5 7.667 2.5 6M18 22a4 4 0 1 0 0-8 4 4 0 0 0 0 8M10 14.5l-7 7m0-7 7 7"
+            ></path>
+        </svg>
+    );
+};
+
+export const Image: FC<IconProps> = ({ ...props }) => {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+            {...props}
+        >
+            <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeOpacity="0.7"
+                strokeWidth="2"
+                d="M15 8h.01M3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3z"
+            ></path>
+            <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeOpacity="0.7"
+                strokeWidth="2"
+                d="m3 16 5-5c.928-.893 2.072-.893 3 0l5 5"
+            ></path>
+            <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeOpacity="0.7"
+                strokeWidth="2"
+                d="m14 14 1-1c.928-.893 2.072-.893 3 0l3 3"
+            ></path>
+        </svg>
+    );
+};
+
+export const Ambiance: FC<IconProps> = ({ ...props }) => {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+            {...props}
+        >
+            <path
+                fillOpacity="0.7"
+                d="M8 4v10.184A3 3 0 0 0 7 14a3 3 0 1 0 3 3V7h7v4.184A3 3 0 0 0 16 11a3 3 0 1 0 3 3V4z"
+            ></path>
+        </svg>
+    );
+};
