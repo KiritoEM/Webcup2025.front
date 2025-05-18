@@ -41,7 +41,7 @@ const Hero = (): JSX.Element => {
 
     return (
         <div
-        id="mainNav.home"
+            id="mainNav.home"
             className={`hero  flex min-h-screen items-center overflow-hidden ${theme === "dark" ? "bg-darkGradient" : "bg-lightGradient"}`}
         >
             <div className="hero__content relative mx-auto mb-[150px] flex flex-col items-center justify-center space-y-5 px-4 pt-[27vh] text-center md:px-0  md:pt-[14vh] lg:pt-[30vh] 2xl:pt-[26.5vh]">
@@ -77,7 +77,7 @@ const Hero = (): JSX.Element => {
                     text={tHome("description")}
                 />
 
-                <Link to={"/test-page"}>
+                <Link to={"/guide"}>
                     <Button
                         size="lg"
                         className="hero__cta rounded-full"

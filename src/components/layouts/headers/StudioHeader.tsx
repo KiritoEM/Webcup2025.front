@@ -6,17 +6,21 @@ import { ArrowLeft } from "lucide-react";
 import { JSX } from "react";
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const StudioHeader = (): JSX.Element => {
     const { t } = useTranslation("studio");
     const dispatch: AppDispatch = useDispatch();
     const { isPreview } = useSelector((state: RootState) => state.studio);
+    const navigate = useNavigate();
+
     return (
         <header className="studio-header  fixed z-50 w-full overflow-hidden border-b-3 border-[#FFDD9B] bg-black">
             <div className="header-container container  flex justify-between px-5 py-6">
                 <Button
                     variant="ghost"
-                    className="studio-header__back-btn font- font-dm text-2xl"
+                    className="studio-header__back-btn font- cursor-pointer font-dm text-2xl"
+                    onClick={() => navigate("/")}
                 >
                     <ArrowLeft className="size-6" /> TheStudio
                 </Button>

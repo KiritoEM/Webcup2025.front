@@ -145,14 +145,13 @@
 
 @layer base {
     * {
-        @apply border-border outline-ring/50 scroll-smooth;
+        @apply scroll-smooth border-border outline-ring/50;
     }
 
     body {
-        @apply bg-background text-base font-normal text-foreground scroll-smooth;
+        @apply scroll-smooth bg-background text-base font-normal text-foreground;
     }
 }
-
 
 @layer utilities {
     .container {
@@ -209,35 +208,35 @@
         scrollbar-width: none;
         /* Firefox */
     }
-        @keyframes marquee {
-            0% {
-                transform: translateX(0%);
-            }
-    
-            100% {
-                transform: translateX(-50%);
-            }
+    @keyframes marquee {
+        0% {
+            transform: translateX(0%);
         }
-    
-        .animate-marquee {
-            display: inline-block;
-            animation: marquee 50s linear infinite;
+
+        100% {
+            transform: translateX(-50%);
         }
-    
-        @keyframes marqueeR {
-            0% {
-                transform: translateX(-50%);
-            }
-    
-            100% {
-                transform: translateX(0%);
-            }
+    }
+
+    .animate-marquee {
+        display: inline-block;
+        animation: marquee 50s linear infinite;
+    }
+
+    @keyframes marqueeR {
+        0% {
+            transform: translateX(-50%);
         }
-    
-        .animate-marqueeR {
-            display: inline-block;
-            animation: marqueeR 50s linear infinite;
+
+        100% {
+            transform: translateX(0%);
         }
+    }
+
+    .animate-marqueeR {
+        display: inline-block;
+        animation: marqueeR 50s linear infinite;
+    }
 }
 
 /* Toggle theme mode transition */

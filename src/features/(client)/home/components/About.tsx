@@ -62,7 +62,10 @@ const About = (): JSX.Element => {
     }, []);
 
     return (
-        <section id="mainNav.about" className="about container w-full overflow-hidden px-5 py-24">
+        <section
+            id="mainNav.about"
+            className="about container w-full overflow-hidden px-5 py-24"
+        >
             <div className="header mx-auto w-fit space-y-5 text-center">
                 <img
                     src="/About.png"

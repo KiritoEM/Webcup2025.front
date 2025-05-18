@@ -1,9 +1,4 @@
-import {
-    createContext,
-    FC,
-    ReactNode,
-    useState,
-} from "react";
+import { createContext, FC, ReactNode, useState } from "react";
 
 export type AuthContextType = {
     token: string;

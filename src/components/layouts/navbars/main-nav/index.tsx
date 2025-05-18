@@ -1,5 +1,5 @@
 import { MAIN_NAV_DATA } from "@/helpers/constant";
-import { JSX, useState, useEffect, use } from "react";
+import { JSX, useState, useEffect } from "react";
 import SelectLang from "./components/SelectLang";
 import SelectTheme from "./components/SelectTheme";
 import { useTranslation } from "react-i18next";
@@ -101,20 +101,16 @@ const MainNav = (): JSX.Element => {
                     <ul className="menu-items hidden space-x-8 lg:flex">
                         {MAIN_NAV_DATA.map((item, index) => (
                             <li
-                                key={index} 
+                                key={index}
                                 className="menu-items__list interactive-list cursor-pointer transition-all duration-150 hover:text-primary"
                             >
-                                {
-                                    path === "/" ? (
-                                        <a href={`#${item.title}`}>
-                                            {t(item.title)}
-                                        </a>
-                                    ) : (
-                                        <Link to={"/"}>
-                                            {t(item.title)}
-                                        </Link>
-                                    )
-                                }
+                                {path === "/" ? (
+                                    <a href={`#${item.title}`}>
+                                        {t(item.title)}
+                                    </a>
+                                ) : (
+                                    <Link to={"/"}>{t(item.title)}</Link>
+                                )}
                             </li>
                         ))}
                     </ul>

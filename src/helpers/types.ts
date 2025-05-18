@@ -27,11 +27,9 @@ export type Response<T> = {
     data?: T;
 };
 
-
 export type Emotion = {
     emoji: string;
     labelFr: string;
     constant: string;
     labelEn: string;
 };
-

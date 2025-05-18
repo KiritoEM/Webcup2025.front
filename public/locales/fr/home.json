@@ -46,10 +46,8 @@
         }
     },
     "footer": {
-        "cta": {
-            "text": "Parce que <br/> chaque fin mérite <br/>d’être entendue.",
-            "btnLabel": "Get in Touch"
-        },
+        "text": "Because every <br/> chaque ending deserves <br/> to be heard.",
+        "btnLabel": "Commencer",
         "navigation": "Navigation",
         "thanks": "Remerciements à",
         "team": "L’équipe Trimobe",

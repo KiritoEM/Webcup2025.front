@@ -52,7 +52,9 @@ const TextPrompt = (): JSX.Element => {
                     disabled={isSubmitting}
                 />
 
-                {error && <p className="text-destructive">Veuillez remplir l'input</p>}
+                {error && (
+                    <p className="text-destructive">Veuillez remplir l'input</p>
+                )}
             </div>
 
             <Button
@@ -67,4 +69,3 @@ const TextPrompt = (): JSX.Element => {
 };
 
 export default TextPrompt;
-

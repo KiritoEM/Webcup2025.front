@@ -28,10 +28,12 @@ const FAQAccordion: FC<FAQAccordionProps> = ({
     const { t } = useTranslation("home", { keyPrefix: "faq" });
     return (
         <AccordionItem value={value}>
-            <AccordionTrigger className="text-xl text-primary [&>svg]:size-7 dark:[&>svg]:text-white [&>svg]:text-dark">
+            <AccordionTrigger className="[&>svg]:text-dark text-xl text-primary [&>svg]:size-7 dark:[&>svg]:text-white">
                 {t(question)}
             </AccordionTrigger>
-            <AccordionContent className="text-base">{t(response)}</AccordionContent>
+            <AccordionContent className="text-base">
+                {t(response)}
+            </AccordionContent>
         </AccordionItem>
     );
 };
@@ -56,7 +58,7 @@ const FAQ = (): JSX.Element => {
                 trigger: sectionRef.current,
                 start: "top 86%",
                 end: "bottom 10%",
-                toggleActions: "play reverse restart reverse",
+                toggleActions: "play none none none",
             },
         });
     }, []);

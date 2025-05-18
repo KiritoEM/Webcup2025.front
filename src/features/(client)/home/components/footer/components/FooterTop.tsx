@@ -6,12 +6,14 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowRight } from "lucide-react";
 import { JSX, useRef } from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const FooterTop = (): JSX.Element => {
     const { t } = useTranslation("home", { keyPrefix: "footer" });
     const { t: tCommon } = useTranslation("common", { keyPrefix: "mainNav" });
+    const navigate = useNavigate();
 
     const sectionRef = useRef<HTMLDivElement | null>(null);
 
@@ -43,10 +45,14 @@ const FooterTop = (): JSX.Element => {
             <div className="footer-top__cta lg:max-w-auto flex w-full max-w-[450px] flex-col items-center lg:w-[40%] lg:items-start">
                 <h1
                     className="text-center font-dm text-4xl leading-none text-primary md:text-5xl lg:text-start xl:text-6xl"
-                    dangerouslySetInnerHTML={{ __html: t("cta.text") }}
+                    dangerouslySetInnerHTML={{ __html: t("text") }}
                 />
-                <Button size="lg" className="mt-8 w-fit rounded-full !px-5">
-                    {t("cta.btnLabel")} <ArrowRight className="size-6" />
+                <Button
+                    size="lg"
+                    className="mt-8 w-fit rounded-full !px-5"
+                    onClick={() => navigate("/guide")}
+                >
+                    {t("btnLabel")} <ArrowRight className="size-6" />
                 </Button>
             </div>
 

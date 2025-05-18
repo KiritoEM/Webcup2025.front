@@ -1,4 +1,4 @@
-declare module 'swiper/css' {
-    const content: any;
+declare module "swiper/css" {
+    const content: unknown;
     export default content;
 }

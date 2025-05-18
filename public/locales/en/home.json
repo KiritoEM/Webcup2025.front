@@ -45,10 +45,8 @@
             "response": "Yes, it's 100% responsive. Whether you're in bed, on the subway, or on a bench after a heavy conversation, your ending is always within reach."
         },
         "footer": {
-            "cta": {
-                "text": "Because every <br/> chaque ending deserves <br/> to be heard.",
-                "btnLabel": "Get in Touch"
-            },
+            "text": "Parce que <br/> chaque fin mérite <br/>d’être entendue.",
+            "btnLabel": "Get in Touch",
             "navigation": "Navigation",
             "thanks": "Thanks to",
             "team": "The team Trimobe",

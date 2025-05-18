@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// Import the icons
+// Import des icônes
 import CryingFace from "@/assets/icons/CryingFace.png";
 import FaceExhaling from "@/assets/icons/FaceExhaling.png";
 import FaceWithoutMouth from "@/assets/icons/FaceWithoutMouth.png";
@@ -61,7 +61,7 @@ const EmotionTag: React.FC<{
 
 type EmotionTagsProps = {
     select: (emotion: string) => void;
-}
+};
 
 const EmotionTags: React.FC<EmotionTagsProps> = ({ select }) => {
     const [selectedLabel, setSelectedLabel] = useState<string | null>(null);
@@ -74,14 +74,13 @@ const EmotionTags: React.FC<EmotionTagsProps> = ({ select }) => {
                     {...emotion}
                     selected={selectedLabel === emotion.label}
                     onSelect={() => {
-                        setSelectedLabel(
+                        const newLabel =
                             selectedLabel === emotion.label
                                 ? null
-                                : emotion.label,
-                        ),
-                            select(emotion.label)
-                    }
-                    }
+                                : emotion.label;
+                        setSelectedLabel(newLabel);
+                        select(emotion.label);
+                    }}
                 />
             ))}
         </form>

@@ -8,17 +8,15 @@ const StudioLayout = (): JSX.Element => {
     const { token } = useAuth();
     return (
         <>
-            {
-                token ? (
-                    <main className="studio-layout">
-                        <StudioHeader />
-                        <Outlet />
-                        <StudioToolbar />
-                    </main>
-                ) : (
-                    <Navigate to="/login" />
-                )
-            }
+            {token ? (
+                <main className="studio-layout">
+                    <StudioHeader />
+                    <Outlet />
+                    <StudioToolbar />
+                </main>
+            ) : (
+                <Navigate to="/login" />
+            )}
         </>
     );
 };

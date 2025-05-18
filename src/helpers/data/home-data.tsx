@@ -47,22 +47,22 @@ export const FAQ_DATA: FAQAccordionProps[] = [
     {
         response: "accordion1.response",
         question: "accordion1.question",
-        value:""
+        value: "",
     },
     {
         response: "accordion2.response",
         question: "accordion2.question",
-        value:""
+        value: "",
     },
     {
         response: "accordion3.response",
         question: "accordion3.question",
-        value:""
+        value: "",
     },
     {
         response: "accordion4.response",
         question: "accordion4.question",
-        value:""
+        value: "",
     },
 ];
 

@@ -8,7 +8,7 @@ const Emotions = (): JSX.Element => {
 
     const handleSelect = (emotion: string) => {
         setEmotion(emotion);
-    }
+    };
 
     const navigate = useNavigate();
 
@@ -16,7 +16,11 @@ const Emotions = (): JSX.Element => {
         <section className="mx-auto mt-4 max-w-lg space-y-10 p-4 text-center">
             <h1 className="text-5xl font-bold">Comment tu te sens?</h1>
             <EmotionTags select={handleSelect} />
-            <Button disabled={!selectedEmotion} className="mb-10 w-full bg-black hover:bg-black dark:bg-white" onClick={() => navigate(`/studio?emotion=${selectedEmotion}`)}>
+            <Button
+                disabled={!selectedEmotion}
+                className="mb-10 w-full bg-black hover:bg-black dark:bg-white"
+                onClick={() => navigate(`/studio?emotion=${selectedEmotion}`)}
+            >
                 Continuer
             </Button>
         </section>

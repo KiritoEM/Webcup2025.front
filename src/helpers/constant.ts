@@ -40,7 +40,7 @@ export const LANG_OPTIONS: ILanguageOption[] = [
         title: "lang.fr",
         icon: "/icons/french-flag.svg",
         value: "fr",
-    }
+    },
 ];
 
 export const THEME_OPTIONS: IThemeOption[] = [
@@ -80,60 +80,60 @@ export const EMOTIONS_AVAILABLE: Emotion[] = [
         emoji: "🥲",
         labelFr: "Joie libératrice",
         constant: "LIBERATING_JOY",
-        labelEn: "Liberating Joy"
+        labelEn: "Liberating Joy",
     },
     {
         emoji: "😢",
         labelFr: "Tristesse",
         constant: "SADNESS",
-        labelEn: "Sadness"
+        labelEn: "Sadness",
     },
     {
         emoji: "🤢",
         labelFr: "Dégoût",
         constant: "DISGUST",
-        labelEn: "Disgust"
+        labelEn: "Disgust",
     },
     {
         emoji: "😡",
         labelFr: "Colère explosive",
         constant: "EXPLOSIVE_ANGER",
-        labelEn: "Explosive Anger"
+        labelEn: "Explosive Anger",
     },
     {
         emoji: "🤨",
         labelFr: "Ironie détachée",
         constant: "DETACHED_IRONY",
-        labelEn: "Detached Irony"
+        labelEn: "Detached Irony",
     },
     {
         emoji: "😂",
         labelFr: "Hilarant",
         constant: "HILARIOUS",
-        labelEn: "Hilarious"
+        labelEn: "Hilarious",
     },
     {
         emoji: "🤔",
         labelFr: "Poétique",
         constant: "POETIC",
-        labelEn: "Poetic"
+        labelEn: "Poetic",
     },
     {
         emoji: "🕳️",
         labelFr: "Vide existentiel",
         constant: "EXISTENTIAL_VOID",
-        labelEn: "Existential Void"
+        labelEn: "Existential Void",
     },
     {
         emoji: "🙂",
         labelFr: "Acceptation",
         constant: "ACCEPTANCE",
-        labelEn: "Acceptance"
+        labelEn: "Acceptance",
     },
     {
         emoji: "🫣",
         labelFr: "Confus",
         constant: "CONFUSED",
-        labelEn: "Confused"
-    }
+        labelEn: "Confused",
+    },
 ];

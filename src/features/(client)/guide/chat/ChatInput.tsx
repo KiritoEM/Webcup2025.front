@@ -2,8 +2,8 @@ import React, { FormEvent, useState } from "react";
 
 type ChatInputProps = {
     sendMessage: (message: string) => void;
-    disabled: boolean
-}
+    disabled: boolean;
+};
 
 const ChatInput: React.FC<ChatInputProps> = ({ sendMessage, disabled }) => {
     const [error, setError] = useState<boolean>(false);
@@ -34,21 +34,11 @@ const ChatInput: React.FC<ChatInputProps> = ({ sendMessage, disabled }) => {
                 />
 
                 <div className="ml-4 flex items-center gap-4">
-                    <svg
-                        width="24"
-                        height="25"
-                        viewBox="0 0 24 25"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                    <button
+                        className="rounded-lg bg-blue-600 p-2"
+                        type="submit"
+                        disabled={disabled}
                     >
-                        <g opacity="0.8">
-                            <path
-                                d="M19.5312 10.7422C20.066 10.7422 20.5 11.1702 20.5 11.6992C20.4998 16.0028 17.2 19.5568 12.9688 20.0342V21.959C12.9688 22.487 12.5347 22.916 12 22.916C11.4645 22.9158 11.0322 22.4869 11.0322 21.959V20.0342C6.80002 19.5568 3.50017 16.0028 3.5 11.6992C3.5 11.1702 3.93402 10.7422 4.46875 10.7422C5.00347 10.7422 5.4375 11.1702 5.4375 11.6992C5.43769 15.2718 8.38121 18.1785 12 18.1787C15.618 18.1787 18.5623 15.272 18.5625 11.6992C18.5625 11.1702 18.9965 10.7422 19.5312 10.7422ZM12.1748 2.91602C14.5781 2.91604 16.5272 4.83966 16.5273 7.21289V11.8359C16.5273 14.2083 14.5782 16.1338 12.1748 16.1338H11.8252C9.42181 16.1338 7.47363 14.2083 7.47363 11.8359V7.21289C7.47374 4.83964 9.42187 2.91602 11.8252 2.91602H12.1748Z"
-                                fill="#BEBEBE"
-                            />
-                        </g>
-                    </svg>
-                    <button className="rounded-lg bg-blue-600 p-2" type="submit" disabled={disabled}>
                         <svg
                             width="16"
                             height="17"
@@ -64,7 +54,9 @@ const ChatInput: React.FC<ChatInputProps> = ({ sendMessage, disabled }) => {
                     </button>
                 </div>
             </div>
-            {error && <p className="text-destructive">Veuillze remplir l'input</p>}
+            {error && (
+                <p className="text-destructive">Veuillze remplir l'input</p>
+            )}
         </form>
     );
 };
