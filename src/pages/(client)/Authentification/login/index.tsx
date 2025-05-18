@@ -10,7 +10,6 @@ import "react-toastify/dist/ReactToastify.css";
 import { LOGIN } from "@/features/(client)/auth/services/auth.sevice";
 import { loginSchema, LoginSchemaTypes } from "@/lib/form-validation";
 import { z } from "zod";
-import { GoogleButton } from "@/features/(client)/auth/services/GoogleButton";
 
 const Login = () => {
     const { t } = useTranslation("authentification", { keyPrefix: "Login" });
@@ -145,19 +144,6 @@ const Login = () => {
                     >
                         {loading ? t("loading") : t("loginButton")}
                     </Button>
-
-                    {/* Divider */}
-                    <div className="relative text-center text-sm">
-                        <span className="relative z-10 bg-background px-2 text-muted-foreground">
-                            {t("orLoginWith")}
-                        </span>
-                        <div className="absolute inset-0 flex items-center border-t border-border" />
-                    </div>
-
-                    {/* Google Button */}
-                    <div className="flex items-center justify-center">
-                        <GoogleButton />
-                    </div>
                 </div>
 
                 {/* Signup Redirect */}
