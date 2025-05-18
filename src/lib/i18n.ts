@@ -14,7 +14,7 @@ i18n.use(HttpBackend) //to load translations from /public/locales
     .init({
         supportedLngs: ["fr", "mg", "en"],
         fallbackLng: "fr",
-        ns: ["common", "home", "studio"], //namespaces
+        ns: ["common", "home", "studio", "lists"], //namespaces
         defaultNS: "common", //default namespace
         fallbackNS: "common", //fallback namespace
         load: "languageOnly",

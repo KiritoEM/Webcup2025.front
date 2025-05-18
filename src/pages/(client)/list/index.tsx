@@ -1,10 +1,17 @@
-import Hero from "@/features/(client)/list/Hero";
+import Footer from "@/features/(client)/home/components/footer";
+import Hero from "@/features/(client)/list/components/Hero";
+import Slider from "@/features/(client)/list/components/Slider";
 
 const List = () => {
     return (
-        <section className="list w-full overflow-hidden">
-            <Hero />
-        </section>
+        <>
+            <section className="lists w-full overflow-hidden">
+                <Hero />
+                <Slider />
+            </section>
+
+            <Footer />
+        </>
     );
 };
 
