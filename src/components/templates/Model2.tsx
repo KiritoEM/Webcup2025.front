@@ -8,7 +8,7 @@ const Model2: FC<ModelProps> = ({ prompt, title }) => {
     const { color } = useSelector((state: RootState) => state.studio);
     return (
         <div className="relative h-full w-full">
-            <div className="mb-8 w-[570px] relative z-20 font-anton text-[4.5rem] leading-[90px] font-bold text-black">
+            <div className="relative z-20 mb-8 w-[570px] font-anton text-[4.5rem] leading-[90px] font-bold text-black">
                 {title}
             </div>
 
@@ -20,9 +20,7 @@ const Model2: FC<ModelProps> = ({ prompt, title }) => {
                 />
             </div>
 
-            <div
-                className="h-[150px] relative -left-[70px] -rotate-10 -top-[40px] w-[380px] rounded-xl object-cover bg-[#f77b6b]"
-            />
+            <div className="relative -top-[40px] -left-[70px] h-[150px] w-[380px] -rotate-10 rounded-xl bg-[#f77b6b] object-cover" />
 
             <div className="mt-[55px] w-full">
                 <p

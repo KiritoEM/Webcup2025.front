@@ -14,7 +14,7 @@ const Model1: FC<ModelProps> = ({ prompt, title }) => {
 
     return (
         <div className="relative h-full w-full">
-            <div className="mb-8 w-[550px] relative z-30 font-playfair text-[3.7rem] leading-[65px] font-medium text-black">
+            <div className="relative z-30 mb-8 w-[550px] font-playfair text-[3.7rem] leading-[65px] font-medium text-black">
                 {title}
             </div>
 
@@ -30,7 +30,7 @@ const Model1: FC<ModelProps> = ({ prompt, title }) => {
 
             <div className="absolute top-[120px] left-0 z-10 h-[220px] w-[250px] rotate-10 rounded-2xl bg-[#FEE09E] p-5" />
 
-            <div className="mt-[220px] relative z-20 w-full">
+            <div className="relative z-20 mt-[220px] w-full">
                 <p
                     className={cn("text-2xl whitespace-pre-line")}
                     style={{

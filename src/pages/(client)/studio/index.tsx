@@ -28,7 +28,7 @@ const Studio = (): JSX.Element => {
                 style={{ cursor: isDragging ? "grabbing" : "grab" }}
             >
                 <div
-                    className={`studio-default-frame relative $ ${activeModel === "model1" ? "bg-[#f1ecd5]" : " bg-[#f0d0d0]"} origin-top-left p-10`}
+                    className={`studio-default-frame $ relative ${activeModel === "model1" ? "bg-[#f1ecd5]" : " bg-[#f0d0d0]"} origin-top-left p-10`}
                     style={{
                         width: "690px",
                         height: "max",

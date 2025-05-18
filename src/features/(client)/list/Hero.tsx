@@ -38,7 +38,7 @@ const Hero = (): JSX.Element => {
     }, []);
 
     return (
-        <div className="hero flex w-full min-h-screen items-center overflow-hidden">
+        <div className="hero flex min-h-screen w-full items-center overflow-hidden">
             <div className="hero__content relative mx-auto mb-[150px] flex flex-col items-center justify-center space-y-5 px-4 pt-[27vh] text-center md:px-0  md:pt-[14vh] lg:pt-[30vh] 2xl:pt-[26.5vh]">
                 <SparklesText>
                     <div className="hero-content__title mt-5 font-dm text-[13vw] leading-none text-primary md:mt-2 md:text-[9.5vw] lg:text-[6.6vw] xl:text-[7.2vw] 2xl:text-[5.6vw]">

@@ -7,7 +7,7 @@ type InitialState = {
     userText: string;
     color: string;
     activeModel: ModelType;
-    isPreview: boolean
+    isPreview: boolean;
 };
 
 const initialState: InitialState = {
@@ -16,7 +16,7 @@ const initialState: InitialState = {
         "Hier, j’ai posé mon sac d’inquiétudes sur le pas de ma porte.Ce matin, je me suis levé·e en écoutant les oiseaux chanter, sans pression, sans attentes.",
     color: "#000000",
     activeModel: "model1",
-    isPreview: false
+    isPreview: false,
 };
 
 const studioSlice = createSlice({
@@ -41,5 +41,6 @@ const studioSlice = createSlice({
     },
 });
 
-export const { setText, setTitle, changeColor, setModel, setIsPreview } = studioSlice.actions;
+export const { setText, setTitle, changeColor, setModel, setIsPreview } =
+    studioSlice.actions;
 export default studioSlice.reducer;

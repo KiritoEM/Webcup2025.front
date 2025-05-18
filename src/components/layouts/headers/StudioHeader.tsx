@@ -21,20 +21,22 @@ const StudioHeader = (): JSX.Element => {
                     <ArrowLeft className="size-6" /> TheStudio
                 </Button>
 
-                <div className="header-actions flex w-fit items-center gap-6" onClick={() => dispatch(setIsPreview(!isPreview))}>
+                <div
+                    className="header-actions flex w-fit items-center gap-6"
+                    onClick={() => dispatch(setIsPreview(!isPreview))}
+                >
                     <Button
                         variant="ghost"
-                        className="hidden sm:inline-flex header-actions__apercu font- font-dm"
+                        className="header-actions__apercu font- hidden font-dm sm:inline-flex"
                     >
-                        {
-                            !isPreview ?
-                                <>
-                                    {t("preview")} < EyeIc className="size-6 fill-primary" />
-                                </>
-                                :
-                                "Close"
-
-                        }
+                        {!isPreview ? (
+                            <>
+                                {t("preview")}{" "}
+                                <EyeIc className="size-6 fill-primary" />
+                            </>
+                        ) : (
+                            "Close"
+                        )}
                     </Button>
 
                     <Button className="header-actions__share rounded-sm bg-[#1F57E7] !px-4 font-medium text-white">

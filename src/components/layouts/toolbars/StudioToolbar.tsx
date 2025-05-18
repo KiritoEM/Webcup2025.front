@@ -12,9 +12,12 @@ import { useSelector } from "react-redux";
 const StudioToolbar = (): JSX.Element => {
     const { isPreview } = useSelector((state: RootState) => state.studio);
     return (
-        <div className={
-            cn("studio-toolbar fixed bottom-0 sm:bottom-6 left-1/2 z-50 -translate-x-1/2 items-center gap-14 sm:rounded-xl bg-[#2A2A2A] px-12 py-4 opacity-90 backdrop-blur-sm", isPreview ? "hidden" : "flex")
-        }>
+        <div
+            className={cn(
+                "studio-toolbar fixed bottom-0 left-1/2 z-50 -translate-x-1/2 items-center gap-14 bg-[#2A2A2A] px-12 py-4 opacity-90 backdrop-blur-sm sm:bottom-6 sm:rounded-xl",
+                isPreview ? "hidden" : "flex",
+            )}
+        >
             {STUDIO_TOOLBAR_LIST.map((item, index) => (
                 <DropdownMenu>
                     <DropdownMenuTrigger>
