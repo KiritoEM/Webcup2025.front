@@ -4,6 +4,7 @@ import ClientLayout from "@/components/layouts/ClientLayout";
 import Guide from "./(client)/guide";
 import Choice from "./(client)/guide/choice";
 import Chat from "./(client)/guide/chat";
+import Emotions from "./(client)/guide/emotions";
 
 const router = createBrowserRouter([
     {
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
                     },
                     {
                         path: "emotions",
-                        element: <div>emotions</div>,
+                        element: <Emotions />,
                     },
                     {
                         path: "chat",
