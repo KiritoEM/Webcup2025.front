@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Eye, EyeOff } from "lucide-react";
-import { Google } from "@/helpers/icons";
 import { useTranslation } from "react-i18next";
 import { usePageTransition } from "@/Provider.tsx/PageTransitionProvider";
 import { SIGNUP } from "@/features/(client)/auth/services/auth.sevice";
@@ -210,26 +209,6 @@ const SignUp = () => {
                     >
                         {loading ? t("loading") : t("register")}
                     </Button>
-
-                    {/* Divider */}
-                    <div className="relative text-center text-sm">
-                        <span className="relative z-10 bg-background px-2 text-muted-foreground">
-                            {t("orRegister")}
-                        </span>
-                        <div className="absolute inset-0 flex items-center border-t border-border" />
-                    </div>
-
-                    {/* Google Button */}
-                    <div className="flex items-center justify-center">
-                        <Button
-                            variant="outline"
-                            className="w-full"
-                            type="button"
-                        >
-                            <Google className="mr-2" />
-                            Google
-                        </Button>
-                    </div>
                 </div>
 
                 {/* Already registered */}
