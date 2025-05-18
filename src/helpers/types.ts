@@ -26,3 +26,12 @@ export type Response<T> = {
     message: string;
     data?: T;
 };
+
+
+export type Emotion = {
+    emoji: string;
+    labelFr: string;
+    constant: string;
+    labelEn: string;
+};
+

@@ -1,6 +1,6 @@
 import { Moon, Sun } from "lucide-react";
 import { useMediaQuery } from "react-responsive";
-import { ILanguageOption, INavItem, IThemeOption } from "./types";
+import { Emotion, ILanguageOption, INavItem, IThemeOption } from "./types";
 
 export const BACKEND_URL =
     "https://trim0be.madagascar.webcup.hodi.host/theendpage/api/";
@@ -75,3 +75,66 @@ export const useScrollDefaultOptions = () => {
         toggleActions: "play reverse play reverse",
     };
 };
+
+export const EMOTIONS_AVAILABLE: Emotion[] = [
+    {
+        emoji: "🥲",
+        labelFr: "Joie libératrice",
+        constant: "LIBERATING_JOY",
+        labelEn: "Liberating Joy"
+    },
+    {
+        emoji: "😢",
+        labelFr: "Tristesse",
+        constant: "SADNESS",
+        labelEn: "Sadness"
+    },
+    {
+        emoji: "🤢",
+        labelFr: "Dégoût",
+        constant: "DISGUST",
+        labelEn: "Disgust"
+    },
+    {
+        emoji: "😡",
+        labelFr: "Colère explosive",
+        constant: "EXPLOSIVE_ANGER",
+        labelEn: "Explosive Anger"
+    },
+    {
+        emoji: "🤨",
+        labelFr: "Ironie détachée",
+        constant: "DETACHED_IRONY",
+        labelEn: "Detached Irony"
+    },
+    {
+        emoji: "😂",
+        labelFr: "Hilarant",
+        constant: "HILARIOUS",
+        labelEn: "Hilarious"
+    },
+    {
+        emoji: "🤔",
+        labelFr: "Poétique",
+        constant: "POETIC",
+        labelEn: "Poetic"
+    },
+    {
+        emoji: "🕳️",
+        labelFr: "Vide existentiel",
+        constant: "EXISTENTIAL_VOID",
+        labelEn: "Existential Void"
+    },
+    {
+        emoji: "🙂",
+        labelFr: "Acceptation",
+        constant: "ACCEPTANCE",
+        labelEn: "Acceptance"
+    },
+    {
+        emoji: "🫣",
+        labelFr: "Confus",
+        constant: "CONFUSED",
+        labelEn: "Confused"
+    }
+];

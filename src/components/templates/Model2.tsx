@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 const Model2: FC<ModelProps> = ({ prompt, title }) => {
     const { color } = useSelector((state: RootState) => state.studio);
     return (
-        <div className="relative h-full w-full">
+        <div className="relative h-full w-full overflow-hidden">
             <div className="relative z-20 mb-8 w-[570px] font-anton text-[4.5rem] leading-[90px] font-bold text-black">
                 {title}
             </div>
