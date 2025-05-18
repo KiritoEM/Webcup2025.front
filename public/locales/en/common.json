@@ -12,6 +12,7 @@
     },
     "mainNav": {
         "home": "Home",
+        "exemple": "Exemple",
         "team": "Team",
         "about": "About",
         "faq": "FAQ",
@@ -19,8 +20,7 @@
         "lang": {
             "label": "Select language",
             "fr": "French",
-            "en": "English",
-            "mg": "Malagasy"
+            "en": "English"
         },
         "theme": {
             "label": "Select theme",

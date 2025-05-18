@@ -64,7 +64,10 @@ const FooterTop = (): JSX.Element => {
                             {tCommon("about")}
                         </li>
                         <li className="text-primary/70 hover:text-blue-500">
-                            {tCommon("example")}
+                            {tCommon("exemple")}
+                        </li>
+                        <li className="text-primary/70 hover:text-blue-500">
+                            {tCommon("team")}
                         </li>
                         <li className="text-primary/70 hover:text-blue-500">
                             {tCommon("faq")}

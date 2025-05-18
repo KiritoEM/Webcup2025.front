@@ -12,14 +12,14 @@
     },
     "mainNav": {
         "home": "Accueil",
+        "exemple": "Exemple",
         "team": "Equipe",
         "about": "A propos",
         "faq": "FAQ",
         "lang": {
             "label": "Choisissez la langue",
             "fr": "Français",
-            "en": "Anglais",
-            "mg": "Malgache"
+            "en": "Anglais"
         },
         "theme": {
             "label": "Choisissez un thème",
