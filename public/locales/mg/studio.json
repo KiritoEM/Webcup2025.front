@@ -5,9 +5,13 @@
     },
     "toolbar": {
         "text": "Text",
-        "color": "Color",
+        "color": "Background",
         "elements": "Elements",
-        "music": "Music",
+        "template": "Template",
         "image": "Image"
-    }
+    },
+    "textLabel": "Enter your text",
+    "arealaceholder": "Taper votre texte",
+    "btnLabel": "Hampiditra",
+    "pickColor": "Pick a color"
 }

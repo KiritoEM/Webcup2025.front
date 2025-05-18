@@ -1,25 +1,23 @@
-import { Ambiance, Color, Elements, Text } from "../icons";
-import { Image } from "lucide-react";
+import TextPrompt from "@/components/TextPrompt";
+import { Color, Text } from "../icons";
+import { Globe } from "lucide-react";
+import PickColor from "@/components/PickColor";
+import ToggleModel from "@/components/ToggleModel";
 
 export const STUDIO_TOOLBAR_LIST = [
     {
         label: "text",
         icon: <Text className="size-7 fill-[#EAEEFEB2]/70" />,
+        action: <TextPrompt />,
     },
     {
         label: "color",
         icon: <Color className="size-7 fill-[#EAEEFEB2]/70" />,
+        action: <PickColor />,
     },
     {
-        label: "elements",
-        icon: <Elements className="size-7 fill-[#EAEEFEB2]/70" />,
-    },
-    {
-        label: "image",
-        icon: <Image className="size-7 text-[#EAEEFEB2]/70" />,
-    },
-    {
-        label: "music",
-        icon: <Ambiance className="size-8 fill-[#EAEEFEB2]/70" />,
+        label: "template",
+        icon: <Globe className="size-8 text-[#EAEEFEB2]/70" />,
+        action: <ToggleModel />,
     },
 ];

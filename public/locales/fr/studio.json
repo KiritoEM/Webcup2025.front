@@ -5,9 +5,14 @@
     },
     "toolbar": {
         "text": "Texte",
-        "color": "Couleur",
+        "color": "Background",
         "elements": "Éléments",
-        "music": "Musique",
+        "template": "Template",
         "image": "Image"
-    }
+    },
+    "textLabel": "Entrer votre texte",
+    "arealaceholder": "Taper votre texte",
+    "btnLabel": "Ajouter",
+    "pickColor": "Pick a color",
+    "template": "Choisir un template"
 }

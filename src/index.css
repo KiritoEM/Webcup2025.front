@@ -65,6 +65,8 @@
     );
     --font-display: "Inter", "sans-serif";
     --font-dm: "DmSans", "sans-serif";
+    --font-playfair: "Playfair Display", serif;
+    --font-anton: "Anton", sans-serif;
     --breakpoint-sm2: 400px;
 }
 
@@ -212,4 +214,12 @@
     to {
         mask-size: 200vmax 200vmax;
     }
+}
+
+.studio-toolbar__item:hover > svg {
+    @apply fill-blue-400/100;
+}
+
+.studio-toolbar__item:hover > p {
+    @apply text-blue-400/100;
 }

@@ -7,7 +7,12 @@
         "text": "Text",
         "color": "Color",
         "elements": "Elements",
-        "music": "Music",
+        "template": "Template",
         "image": "Image"
-    }
+    },
+    "textLabel": "Enter your text",
+    "arealaceholder": "Type text here",
+    "btnLabel": "Add",
+    "pickColor": "Pick a color",
+    "template": "Choose template"
 }
