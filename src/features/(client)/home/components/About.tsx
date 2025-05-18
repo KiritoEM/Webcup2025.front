@@ -22,14 +22,14 @@ const AboutCard: FC<AboutCardProps> = ({
     const { t } = useTranslation("home", { keyPrefix: "about" });
 
     return (
-        <article className="about-card rounded-lg border border-input bg-[#0D0D0D] px-5 py-12">
-            <div className="about-card__icon mx-auto w-fit rounded-xl bg-white p-5">
+        <article className="about-card rounded-lg border border-input bg-[#0D0D0D] px-5 py-12 text-white">
+            <div className="about-card__icon mx-auto w-fit rounded-xl bg-white p-5 shadow-2xl shadow-white">
                 {cardIcon}
             </div>
 
             <div className="about-card__texts mt-8 flex flex-col items-center space-y-3">
                 <h5 className="text-lg font-semibold lg:text-xl">{t(title)}</h5>
-                <p className="text-center text-sm text-primary lg:text-base">
+                <p className="text-center text-sm  text-gray-100 lg:text-base">
                     {t(description)}
                 </p>
             </div>

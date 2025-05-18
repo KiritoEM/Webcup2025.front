@@ -1,17 +1,20 @@
 import React from "react";
-import "./infiniteScroll.css";
+import "./InfiniteScroll.css";
 
 const InfiniteScroll: React.FC = () => {
     const slider1Images = [
-        "avanahub.png",
-        "bocasay.png",
-        "etech.png",
-        "hodi.png",
-        "ingenosya.png",
-        "novity.png",
-        "vivetic.png",
-        "yas.png",
-        "fulldigital.png",
+        {
+            src: "/home/partners/association-webcup.png",
+            alt: "association webcup",
+        },
+        { src: "/home/partners/bocasay.png", alt: "bocasay" },
+        { src: "/home/partners/etech.png", alt: "etech" },
+        { src: "/home/partners/hodi.png", alt: "hodi" },
+        { src: "/home/partners/ingenosya.png", alt: "ingenosya" },
+        { src: "/home/partners/novity.png", alt: "novity" },
+        { src: "/home/partners/vivetic.png", alt: "vivetic" },
+        { src: "/home/partners/yas.png", alt: "yas" },
+        { src: "/home/partners/fulldigits.png", alt: "fulldigitals" },
     ];
 
     return (
@@ -30,7 +33,7 @@ const InfiniteScroll: React.FC = () => {
                 }
             >
                 <div className="list relative flex w-full">
-                    {slider1Images.map((src, index) => (
+                    {slider1Images.map((slide, index) => (
                         <div
                             key={`slider1-${index}`}
                             className="item animate-autoRun transition-filter group absolute left-full h-[var(--height)] w-[var(--width)] duration-500"
@@ -42,8 +45,8 @@ const InfiniteScroll: React.FC = () => {
                             }
                         >
                             <img
-                                src={src}
-                                alt=""
+                                src={slide.src}
+                                alt={slide.alt}
                                 className="h-full w-full object-contain"
                             />
                         </div>

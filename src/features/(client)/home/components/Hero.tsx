@@ -9,6 +9,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
+import useTheme from "@/hooks/useTheme";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,6 +17,7 @@ const Hero = (): JSX.Element => {
     const { t: tHome } = useTranslation("home", { keyPrefix: "hero" });
     const { t: tCommon } = useTranslation("common");
     const buttonRef = useRef<HTMLButtonElement | null>(null);
+    const { theme } = useTheme();
 
     useGSAP(() => {
         gsap.set(buttonRef.current, {
@@ -38,10 +40,16 @@ const Hero = (): JSX.Element => {
     }, []);
 
     return (
-        <div className="hero bg-custom-gradient flex min-h-screen items-center overflow-hidden">
+        <div
+            className={`hero  flex min-h-screen items-center overflow-hidden ${theme === "dark" ? "bg-darkGradient" : "bg-lightGradient"}`}
+        >
             <div className="hero__content relative mx-auto mb-[150px] flex flex-col items-center justify-center space-y-5 px-4 pt-[27vh] text-center md:px-0  md:pt-[14vh] lg:pt-[30vh] 2xl:pt-[26.5vh]">
                 <div className="tag inline-flex items-center gap-4 rounded-lg border px-3 py-2 text-sm text-[#ffffff80] md:gap-6 md:px-5">
-                    <span>{tHome("tagLabel")}</span>
+                    <span
+                        className={`${theme == "light" ? "text-gray-500" : ""}`}
+                    >
+                        {tHome("tagLabel")}
+                    </span>
                     <span className="inline-flex h-0 items-center gap-2 text-primary">
                         {tHome("tagBtn")} <ArrowRight className="size-4" />
                     </span>
