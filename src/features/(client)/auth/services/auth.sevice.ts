@@ -17,6 +17,13 @@ export const LOGIN = async <T>(
         const response = await axios.post(`${BACKEND_URL}auth/login/`, data);
 
         if (response.status === 200) {
+            // Store the access token in local storage
+            const accessToken = response.data.access;
+            const refreshToken = response.data.refresh;
+
+            localStorage.setItem("access_token", accessToken);
+            localStorage.setItem("refresh_token", refreshToken);
+
             return {
                 status: "success",
                 message: "Login successful",
@@ -113,3 +120,14 @@ export const SIGNUP = async <T>(
         };
     }
 };
+
+/**
+ * Hook for Google login functionality
+ */
+const googleClientId = import.meta.env.VITE_GOOGLE_CLIENT;
+const googleCallbackUri = import.meta.env.VITE_GOOGLE_CALLBACK_URI;
+
+export const googleSignInUrl = `https://accounts.google.com/o/oauth2/v2/auth?redirect_uri=${googleCallbackUri}&prompt=consent&response_type=code&client_id=${googleClientId}&scope=openid%20email%20profile&access_type=offline`;
+
+console.log("Google Client ID:", googleClientId);
+console.log("Google Callback URI:", googleCallbackUri);

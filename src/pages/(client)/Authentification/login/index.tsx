@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Eye, EyeOff } from "lucide-react";
-import { Google } from "@/helpers/icons";
 import { useTranslation } from "react-i18next";
 import { usePageTransition } from "@/Provider.tsx/PageTransitionProvider";
 import { toast, ToastContainer } from "react-toastify";
@@ -11,6 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { LOGIN } from "@/features/(client)/auth/services/auth.sevice";
 import { loginSchema, LoginSchemaTypes } from "@/lib/form-validation";
 import { z } from "zod";
+import { GoogleButton } from "@/features/(client)/auth/services/GoogleButton";
 
 const Login = () => {
     const { t } = useTranslation("authentification", { keyPrefix: "Login" });
@@ -156,14 +156,7 @@ const Login = () => {
 
                     {/* Google Button */}
                     <div className="flex items-center justify-center">
-                        <Button
-                            variant="outline"
-                            className="w-full bg-[#3739EC] text-white hover:bg-[#3755ec] hover:text-white"
-                            type="button"
-                        >
-                            <Google className="mr-2" />
-                            Google
-                        </Button>
+                        <GoogleButton />
                     </div>
                 </div>
 
