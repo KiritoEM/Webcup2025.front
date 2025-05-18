@@ -9,6 +9,7 @@ const TeamSlider = (): JSX.Element => {
 
     return (
         <section
+        id="mainNav.team"
             ref={sectionRef}
             className="team-slider relative isolate h-[110vh] w-full overflow-hidden pt-22"
         >

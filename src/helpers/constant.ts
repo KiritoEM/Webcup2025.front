@@ -17,8 +17,8 @@ export const MAIN_NAV_DATA: INavItem[] = [
         href: "/products",
     },
     {
-        title: "mainNav.example",
-        href: "/about",
+        title: "mainNav.team",
+        href: "/Team",
     },
     {
         title: "mainNav.faq",
@@ -36,12 +36,7 @@ export const LANG_OPTIONS: ILanguageOption[] = [
         title: "lang.fr",
         icon: "/icons/french-flag.svg",
         value: "fr",
-    },
-    {
-        title: "lang.mg",
-        icon: "/icons/malagasy-flag.svg",
-        value: "mg",
-    },
+    }
 ];
 
 export const THEME_OPTIONS: IThemeOption[] = [

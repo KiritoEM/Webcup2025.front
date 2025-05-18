@@ -1,5 +1,5 @@
 import { MAIN_NAV_DATA } from "@/helpers/constant";
-import { JSX, useState, useEffect } from "react";
+import { JSX, useState, useEffect, use } from "react";
 import SelectLang from "./components/SelectLang";
 import SelectTheme from "./components/SelectTheme";
 import { useTranslation } from "react-i18next";
@@ -7,13 +7,14 @@ import { Logo } from "@/helpers/icons";
 import { Button } from "@/components/ui/button";
 import { MenuIcon } from "lucide-react";
 import MenuResponsive from "./components/MenuResponsive";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import useTheme from "@/hooks/useTheme";
 
 const MainNav = (): JSX.Element => {
     const { t } = useTranslation("common");
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
+    const path = useLocation().pathname;
 
     const { theme } = useTheme();
     const isdark = theme === "dark";
@@ -100,10 +101,20 @@ const MainNav = (): JSX.Element => {
                     <ul className="menu-items hidden space-x-8 lg:flex">
                         {MAIN_NAV_DATA.map((item, index) => (
                             <li
-                                key={index}
+                                key={index} 
                                 className="menu-items__list interactive-list cursor-pointer transition-all duration-150 hover:text-primary"
                             >
-                                {t(item.title)}
+                                {
+                                    path === "/" ? (
+                                        <a href={`#${item.title}`}>
+                                            {t(item.title)}
+                                        </a>
+                                    ) : (
+                                        <Link to={"/"}>
+                                            {t(item.title)}
+                                        </Link>
+                                    )
+                                }
                             </li>
                         ))}
                     </ul>

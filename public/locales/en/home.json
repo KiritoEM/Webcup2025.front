@@ -30,19 +30,19 @@
         "title": "FAQ — Frequent Ends <br/> (and questions too)",
         "accordion1": {
             "question": "What is TheEnd.page?",
-            "response": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vero voluptatum quod architecto dolorem perferendis"
+            "response": "TheEnd.page is a platform to create a personalized page when you're ending something: a breakup, a resignation, a project, a Discord group… Here, you can express yourself, choose your style, and turn the page your own way."
         },
         "accordion2": {
-            "question": "Can I really customize my page?",
-            "response": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vero voluptatum quod architecto dolorem perferendis"
+            "question": "Can I send my page to a specific person?",
+            "response": "Yes. You can share it via a link, by email, or simply publish it in the community. It's up to you who gets to read your final words."
         },
         "accordion3": {
-            "question": "Can I publish anonymously?",
-            "response": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vero voluptatum quod architecto dolorem perferendis"
+            "question": "Does my page disappear after a while?",
+            "response": "Some pages can self-destruct after being read, like an emotional Snap. You can also choose to keep it visible longer, or turn it into a permanent memory."
         },
         "accordion4": {
-            "question": "Can I send my page to a specific person?",
-            "response": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vero voluptatum quod architecto dolorem perferendis"
+            "question": "Is it accessible on mobile?",
+            "response": "Yes, it's 100% responsive. Whether you're in bed, on the subway, or on a bench after a heavy conversation, your ending is always within reach."
         },
         "footer": {
             "cta": {

@@ -30,19 +30,19 @@
         "title": "FAQ — Fins fréquentes <br/> (et questions aussi)",
         "accordion1": {
             "question": "Qu’est-ce que TheEnd.page ?",
-            "response": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vero voluptatum quod architecto dolorem perferendis"
+            "response": "TheEnd.page est une plateforme pour créer une page personnalisée quand tu mets fin à quelque chose : une rupture, une démission, un projet, un groupe Discord… Ici, tu peux poser tes mots, ton style, et tourner la page à ta façon."
         },
         "accordion2": {
-            "question": "Est-ce que je peux vraiment personnaliser ma page ?",
-            "response": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vero voluptatum quod architecto dolorem perferendis"
+            "question": "Est-ce que je peux envoyer ma page à une personne précise ?",
+            "response": "Oui. Tu peux la partager via un lien, par email, ou simplement la publier dans la communauté. C’est toi qui choisis qui lit ton dernier mot."
         },
         "accordion3": {
-            "question": "Est-ce que je peux publier de façon anonyme ?",
-            "response": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vero voluptatum quod architecto dolorem perferendis"
+            "question": "Ma page disparaît après un moment ?",
+            "response": "Certaines pages peuvent s’autodétruire après lecture, un peu comme un Snap émotionnel. Tu peux aussi choisir de la laisser visible plus longtemps, ou en faire un souvenir permanent."
         },
         "accordion4": {
-            "question": "Est-ce que je peux envoyer ma page à une personne précise ?",
-            "response": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vero voluptatum quod architecto dolorem perferendis"
+            "question": "C’est accessible sur mobile ?",
+            "response": "Oui, 100 % responsive. Que tu sois sur ton lit, dans le métro ou sur un banc après une grosse discussion, ta fin est toujours à portée de main."
         }
     },
     "footer": {

@@ -1,6 +1,6 @@
 import type { LucideIcon } from "lucide-react";
 
-export type ILang = "en" | "fr" | "mg";
+export type ILang = "en" | "fr";
 
 export type Itheme = "light" | "dark";
 

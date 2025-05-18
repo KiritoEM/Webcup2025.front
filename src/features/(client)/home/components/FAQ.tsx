@@ -17,19 +17,21 @@ gsap.registerPlugin(ScrollTrigger);
 export type FAQAccordionProps = {
     response: string;
     question: string;
+    value: string;
 };
 
 const FAQAccordion: FC<FAQAccordionProps> = ({
     response,
     question,
+    value,
 }): JSX.Element => {
     const { t } = useTranslation("home", { keyPrefix: "faq" });
     return (
-        <AccordionItem value="item-1">
-            <AccordionTrigger className="text-xl text-primary [&>svg]:size-7 [&>svg]:text-white">
+        <AccordionItem value={value}>
+            <AccordionTrigger className="text-xl text-primary [&>svg]:size-7 dark:[&>svg]:text-white [&>svg]:text-dark">
                 {t(question)}
             </AccordionTrigger>
-            <AccordionContent>{t(response)}</AccordionContent>
+            <AccordionContent className="text-base">{t(response)}</AccordionContent>
         </AccordionItem>
     );
 };
@@ -60,7 +62,10 @@ const FAQ = (): JSX.Element => {
     }, []);
 
     return (
-        <section className="FAQ mx-auto flex w-full max-w-[850px] flex-col items-center overflow-hidden px-5 py-24">
+        <section
+            id="mainNav.faq"
+            className="FAQ mx-auto flex w-full max-w-[850px] flex-col items-center overflow-hidden px-5 py-24"
+        >
             <TextLift
                 className="text-center font-dm text-5xl font-semibold text-primary lg:text-6xl"
                 text={t("title")}
@@ -73,7 +78,12 @@ const FAQ = (): JSX.Element => {
                 ref={sectionRef}
             >
                 {FAQ_DATA.map((faq, index) => (
-                    <FAQAccordion key={index} {...faq} />
+                    <FAQAccordion
+                        key={index}
+                        value={`item-${index}`}
+                        question={faq.question}
+                        response={faq.response}
+                    />
                 ))}
             </Accordion>
         </section>

@@ -145,13 +145,14 @@
 
 @layer base {
     * {
-        @apply border-border outline-ring/50;
+        @apply border-border outline-ring/50 scroll-smooth;
     }
 
     body {
-        @apply bg-background text-base font-normal text-foreground;
+        @apply bg-background text-base font-normal text-foreground scroll-smooth;
     }
 }
+
 
 @layer utilities {
     .container {
