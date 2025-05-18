@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import Home from "./(client)/home/index";
 import ClientLayout from "@/components/layouts/ClientLayout";
 import Studio from "./(client)/studio";
@@ -66,6 +66,10 @@ const router = createBrowserRouter([
                 element: <Studio />,
             },
         ],
+    },
+    {
+        path: "*", // Catch-all pour les routes non définies côté client
+        element: <Navigate to="/" replace />,
     },
 ]);
 
