@@ -1,11 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "./(client)/home/index";
 import ClientLayout from "@/components/layouts/ClientLayout";
-import Login from "./(client)/login";
-import Signup from "./(client)/signup";
 import Studio from "./(client)/studio";
 import StudioLayout from "@/components/layouts/StudioLayout";
 import List from "./(client)/list";
+import Login from "./(client)/Authentification/login";
+import Signup from "./(client)/Authentification/signup";
+import ClientAuthLayout from "@/components/layouts/ClientAuthLayout";
 
 const router = createBrowserRouter([
     {
@@ -19,6 +20,11 @@ const router = createBrowserRouter([
                 //     throw new Error("Data fetching error");
                 // },
             },
+        ],
+    },
+    {
+        element: <ClientAuthLayout />,
+        children: [
             {
                 path: "/login",
                 element: <Login />,

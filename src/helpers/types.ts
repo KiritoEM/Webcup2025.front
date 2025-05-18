@@ -20,3 +20,9 @@ export type IThemeOption = {
     icon: LucideIcon;
     value: Itheme;
 };
+
+export type Response<T> = {
+    status: "success" | "error";
+    message: string;
+    data?: T;
+};

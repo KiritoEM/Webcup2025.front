@@ -1,0 +1,43 @@
+{
+    "layout": {
+        "rightsReserved": "Tous droits réservés.",
+        "privacyPolicy": "Politique de confidentialité",
+        "welcomeTitle": "Bienvenue sur Rage",
+        "welcomeDescription": "Le meilleur endroit pour trouver votre prochaine aventure"
+    },
+    "signUp": {
+        "title": "Créer un compte",
+        "subtitle": "Entrez vos informations pour créer un nouveau compte.",
+        "username": "Nom d'utilisateur",
+        "email": "Email",
+        "password": "Mot de passe",
+        "confirmPassword": "Confirmer le mot de passe",
+        "showPassword": "Afficher le mot de passe",
+        "hidePassword": "Masquer le mot de passe",
+        "showConfirmPassword": "Afficher la confirmation",
+        "hideConfirmPassword": "Masquer la confirmation",
+        "remember": "Se souvenir de moi",
+        "register": "S'inscrire",
+        "orRegister": "ou s'inscrire avec",
+        "already": "Vous avez déjà un compte ?",
+        "login": "Se connecter",
+        "passwordMismatch": "Les mots de passe ne correspondent pas.",
+        "emailVerificationSent": "Email de vérification envoyé. Veuillez vérifier votre boîte de réception.",
+        "unexpectedError": "Une erreur inattendue est survenue. Veuillez réessayer.",
+        "loading": "Inscription en cours..."
+    },
+    "Login": {
+        "title": "Bienvenue",
+        "subtitle": "Saisissez votre email et votre mot de passe pour accéder à votre compte.",
+        "email": "Email",
+        "password": "Mot de passe",
+        "hidePassword": "Masquer le mot de passe",
+        "showPassword": "Afficher le mot de passe",
+        "remember": "Se souvenir de moi",
+        "forgotPassword": "Mot de passe oublié ?",
+        "loginButton": "Se connecter",
+        "orLoginWith": "Ou connectez-vous avec",
+        "noAccount": "Vous n'avez pas encore de compte ?",
+        "signupLink": "S'inscrire"
+    }
+}

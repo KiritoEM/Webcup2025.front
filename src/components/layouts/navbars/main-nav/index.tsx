@@ -1,5 +1,5 @@
 import { MAIN_NAV_DATA } from "@/helpers/constant";
-import { JSX, useState } from "react";
+import { JSX, useState, useEffect } from "react";
 import SelectLang from "./components/SelectLang";
 import SelectTheme from "./components/SelectTheme";
 import { useTranslation } from "react-i18next";
@@ -7,14 +7,21 @@ import { Logo } from "@/helpers/icons";
 import { Button } from "@/components/ui/button";
 import { MenuIcon } from "lucide-react";
 import MenuResponsive from "./components/MenuResponsive";
+import { Link } from "react-router-dom";
 
 const MainNav = (): JSX.Element => {
     const { t } = useTranslation("common");
     const [isOpen, setIsOpen] = useState<boolean>(false);
+    const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
 
     const handleToogle = () => {
         setIsOpen(!isOpen);
     };
+
+    useEffect(() => {
+        const token = localStorage.getItem("accessToken");
+        setIsAuthenticated(!!token);
+    }, []);
 
     return (
         <>
@@ -35,17 +42,19 @@ const MainNav = (): JSX.Element => {
                         ))}
                     </ul>
 
-                    {/* Icon for menu */}
                     <MenuIcon
                         className="flex size-8 lg:hidden"
                         onClick={handleToogle}
                     />
 
-                    <div className="actions hidden items-center  space-x-5 lg:flex">
+                    <div className="actions hidden items-center space-x-5 lg:flex">
                         <SelectTheme />
                         <SelectLang />
-
-                        <Button className="ml-6 rounded-full">Commencer</Button>
+                        <Link to={isAuthenticated ? "/guide" : "/login"}>
+                            <Button className="ml-6 rounded-full">
+                                Commencer
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </nav>
