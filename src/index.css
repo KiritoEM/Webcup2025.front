@@ -157,7 +157,6 @@
     .container {
         @apply container mx-auto 2xl:max-w-[1440px];
     }
-
     .bg-lightGradient {
         background:
             linear-gradient(182deg, #eaeefe 48.48%, #183ec2 101.89%),
@@ -196,6 +195,18 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-position: 100% 0%;
+    }
+
+    .hide-scrollbar::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+    }
+
+    .hide-scrollbar {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
     }
 }
 

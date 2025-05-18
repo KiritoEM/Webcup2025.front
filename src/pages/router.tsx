@@ -7,6 +7,10 @@ import List from "./(client)/list";
 import Login from "./(client)/Authentification/login";
 import Signup from "./(client)/Authentification/signup";
 import ClientAuthLayout from "@/components/layouts/ClientAuthLayout";
+import Guide from "./(client)/guide";
+import Choice from "./(client)/guide/choice";
+import Chat from "./(client)/guide/chat";
+import Emotions from "./(client)/guide/emotions";
 
 const router = createBrowserRouter([
     {
@@ -15,10 +19,28 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home />,
-                // loader: async () => {
-                //     // Simulate a data fetching error
-                //     throw new Error("Data fetching error");
-                // },
+            },
+            {
+                path: "/list",
+                element: <List />,
+            },
+            {
+                path: "/guide",
+                element: <Guide />,
+                children: [
+                    {
+                        path: "",
+                        element: <Choice />,
+                    },
+                    {
+                        path: "emotions",
+                        element: <Emotions />,
+                    },
+                    {
+                        path: "chat",
+                        element: <Chat />,
+                    },
+                ],
             },
         ],
     },
@@ -32,10 +54,6 @@ const router = createBrowserRouter([
             {
                 path: "/signup",
                 element: <Signup />,
-            },
-            {
-                path: "/list",
-                element: <List />,
             },
         ],
     },
