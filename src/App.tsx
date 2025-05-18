@@ -9,17 +9,20 @@ import Cursor from "./components/cursor/index.tsx";
 import { Provider } from "react-redux";
 import { store } from "./lib/redux/store.ts";
 import Loader from "./components/loader/index.tsx";
+import { AuthProvider } from "./contexts/AuthContext.tsx";
 
 const App = (): JSX.Element => {
     return (
         <I18nextProvider i18n={i18n}>
-            <ThemeProvider>
-                <Provider store={store}>
-                    <Cursor />
-                    <Loader />
-                    <RouterProvider router={router} />
-                </Provider>
-            </ThemeProvider>
+            <AuthProvider>
+                <ThemeProvider>
+                    <Provider store={store}>
+                        <Cursor />
+                        <Loader />
+                        <RouterProvider router={router} />
+                    </Provider>
+                </ThemeProvider>
+            </AuthProvider>
         </I18nextProvider>
     );
 };

@@ -59,7 +59,11 @@ const EmotionTag: React.FC<{
     );
 };
 
-const EmotionTags: React.FC = () => {
+type EmotionTagsProps = {
+    select: (emotion: string) => void;
+}
+
+const EmotionTags: React.FC<EmotionTagsProps> = ({ select }) => {
     const [selectedLabel, setSelectedLabel] = useState<string | null>(null);
 
     return (
@@ -69,12 +73,14 @@ const EmotionTags: React.FC = () => {
                     key={emotion.label}
                     {...emotion}
                     selected={selectedLabel === emotion.label}
-                    onSelect={() =>
+                    onSelect={() => {
                         setSelectedLabel(
                             selectedLabel === emotion.label
                                 ? null
                                 : emotion.label,
-                        )
+                        ),
+                            select(emotion.label)
+                    }
                     }
                 />
             ))}
