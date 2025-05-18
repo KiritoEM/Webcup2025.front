@@ -8,6 +8,7 @@ import i18n from "./lib/i18n.ts";
 import Cursor from "./components/cursor/index.tsx";
 import { Provider } from "react-redux";
 import { store } from "./lib/redux/store.ts";
+import Loader from "./components/loader/index.tsx";
 
 const App = (): JSX.Element => {
     return (
@@ -15,6 +16,7 @@ const App = (): JSX.Element => {
             <ThemeProvider>
                 <Provider store={store}>
                     <Cursor />
+                    <Loader />
                     <RouterProvider router={router} />
                 </Provider>
             </ThemeProvider>
