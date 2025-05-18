@@ -3,6 +3,7 @@ import Home from "./(client)/home/index";
 import ClientLayout from "@/components/layouts/ClientLayout";
 import Guide from "./(client)/guide";
 import Choice from "./(client)/guide/choice";
+import Chat from "./(client)/guide/chat";
 
 const router = createBrowserRouter([
     {
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
                     },
                     {
                         path: "chat",
-                        element: <div>chat</div>,
+                        element: <Chat />,
                     },
                 ],
             },

@@ -191,6 +191,17 @@
             #d7f1eb 140.33%
         );
     }
+    .hide-scrollbar::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+    }
+
+    .hide-scrollbar {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
 }
 
 /* Toggle theme mode transition */
